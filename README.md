@@ -3,12 +3,11 @@
 ## Table of Contents
 1. [Description](#description)
 2. [Technologies](#technologies)
-3. [Badges](#Badges)
-4. [Visuals](#Visuals)
-5. [Usage](#Usage)
-6. [Acknowledgments](#Acknowledgments)
-7. [License](#License)
-8. [Project Status](#Project-Status)
+3. [Visuals](#Visuals)
+4. [Usage](#Usage)
+5. [Acknowledgments](#Acknowledgments)
+6. [License](#License)
+7. [Project Status](#Project-Status)
 
 
 # Description
@@ -31,7 +30,7 @@ of demand has decided to take a leap into the virtual world with an online store
 * [Sass](https://sass-lang.com/)
 * [MySQL](https://www.mysql.com/)
 
-# Visuales
+# Visuals
 ***
 
 # Usage
