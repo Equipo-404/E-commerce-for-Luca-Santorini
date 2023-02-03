@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Contacto from './components/contacto/Contacto';
-
+import playeras from './components/contacto/playeras';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto />
+    {//<Contacto />}
+    <playeras/>
   </React.StrictMode>
 );
 
