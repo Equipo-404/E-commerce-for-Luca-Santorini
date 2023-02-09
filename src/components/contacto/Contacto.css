@@ -1,11 +1,10 @@
-.bgForm {
+.Container {
     padding-top: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
-form {
+.info-form {
     background-color: #808080;
     border-radius: .5rem;
     margin: 0 auto;
