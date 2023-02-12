@@ -1,0 +1,75 @@
+.parent{
+    display: grid;
+    place-items: center;
+}
+
+.header-form {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+}
+
+.container-form {
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.data-form {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.summary-form {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.continue-button {
+    margin-top: 3rem;
+    margin-left: auto; margin-right: auto;
+    background-color: #000;
+    color: #FFF;
+    width: 50%;
+}
+
+.checkout-table td {
+    padding-top: .75rem;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    outline: 0;
+    background-color: #F9F9F9;
+    border: 1px solid #000;
+}
+
+image {
+    border: 1px solid #000;
+}
+
+/* .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+} */
+
