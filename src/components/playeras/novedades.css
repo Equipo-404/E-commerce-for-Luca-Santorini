@@ -11,28 +11,34 @@
 }@media only screen and (max-width: 6000px) {
     .segundotexto{
         font-family: applegaramound;
-        font-size: 400%;
+        font-size: 300%;
         margin: 4%;
     }
 @media only screen and (max-width: 600px) {
     .segundotexto{
         font-family: applegaramound;
-        font-size: 300%;
+        font-size: 200%;
         margin: 4%;
     }
   }
   @media only screen and (max-width: 500px) {
     .segundotexto{
         font-family: applegaramound;
-        font-size: 150%;
+        font-size: 120%;
         margin: 4%;
     }
   }
-    
-.foto1{
-float:inline-end;
-width: 130%;
-}
+  @media only screen and (max-width: 200px) {
+    .segundotexto{
+        font-family: applegaramound;
+        font-size: 100%;
+        margin: 4%;
+    }
+  }
+  .foto1{
+    float:inline-end;
+    width: 130%;
+    }
 /*
 .segundotexto{
     font-family: applegaramound;
