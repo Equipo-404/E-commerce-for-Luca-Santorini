@@ -1,16 +1,60 @@
-.Container {
-    padding-top: 20rem;
+.parent{
     display: grid;
     place-items: center;
 }
 
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info-form {
-    background-color: #808080;
-    border-radius: .5rem;
-    margin: 0 auto;
-    width: 15rem;
-    height: 20rem;
-    padding: 1rem;
+    background-color: #D9D9D9;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 20rem;
+}
+
+.info-form label{
+    align-items: left;
+    margin-bottom: 1rem;
+}
+
+.info-form input, textarea{
+    align-items: left;
+    background: none;
+    border-bottom: 1px solid #000;
+}
+
+.image-form {
+    float:left;
+    display: flex;
+    place-items: center;
+    height: 30rem;
+    width: 20rem;
+}
+
+.image-form img {
+    height: 100%;
+    width: 100%;
+}
+
+.enviar{
+    background-color: #000;
+    color: white;
+    width: 150px;
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;
 }
 
 input, textarea {
