@@ -14,6 +14,7 @@
         font-size: 400%;
         margin: 4%;
     }
+}
 @media only screen and (max-width: 600px) {
     .segundotexto{
         font-family: applegaramound;

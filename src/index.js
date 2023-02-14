@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Playeras from './components/playeras/Playeras'
 
-import ImageGrid from './components/playeras/playeras';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<ImageGrid/>
+    <Playeras/>
+  
     
   </React.StrictMode>
 );
