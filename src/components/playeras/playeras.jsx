@@ -115,7 +115,7 @@ const Playeras = () => {
         <Col md={3}>
         <div className='columna'>
           <div className='imagenespolaroid'>
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676229206/blnaca_basica_dmhifj.png" alt="playera negra de danny ocean babylon"></img></div>
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676390493/BASICA_BLANCA_x_LSSW_bwtd9f.png" alt="playera negra de danny ocean babylon"></img></div>
           <CardBody>
             <CardTitle className='titulo' tag="h5">
               Playera

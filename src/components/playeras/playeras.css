@@ -45,6 +45,7 @@
 
 img {
     /* Para que sea responsiva */
+    max-height: -100%;
     width: 100%;
   
 
@@ -67,7 +68,7 @@ img {
     color: white;
 }
 .imgpolaroid{
-    margin: 10px 0;
+    width: 100%;
     
 }
 @media (min-width: 650px) {
