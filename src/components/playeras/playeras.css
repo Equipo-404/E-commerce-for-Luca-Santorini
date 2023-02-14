@@ -6,6 +6,10 @@
     font-family: applegaramound;
     src: url("./AppleGaramond-Bold.ttf");
   }
+  @font-face {
+    font-family: applegaramoundbase;
+    src: url("./AppleGaramond-Bold.ttf");
+  }
  * {
     box-sizing: border-box;
 }@media only screen and (max-width: 6000px) {
@@ -22,18 +26,14 @@
         margin: 4%;
     }
   }
-  @media only screen and (max-width: 500px) {
+ @media (max-width: 500px) {
     .segundotexto{
         font-family: applegaramound;
-        font-size: 150%;
+        font-size: 300%;
         margin: 4%;
     }
   }
-    
-.foto1{
-float:inline-end;
-width: 130%;
-}
+
 /*
 .segundotexto{
     font-family: applegaramound;
@@ -41,19 +41,58 @@ width: 130%;
     margin: 4%;
 }
 */
-.columna {
-    float: left;
-    width: 33%;
-    padding-right: 5px;
-}
 
-.fila::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 img {
     /* Para que sea responsiva */
-    width: 85%;
+    width: 100%;
+  
+
+}
+
+.titulo , .boton , .precio {
+    display: flex;
+    text-align: center;
+    font-size: 300%;
+    display: block; 
+    margin: 0px auto;
+    font-family: applegaramoundbase;
+}
+.titulo , .boton , .precio{
+   position: relative;
+   top: -30px;
+}
+.boton{
+    background-color: black;
+    color: white;
+}
+.imgpolaroid{
+    margin: 10px 0;
+    
+}
+@media (min-width: 650px) {
+    .columna {
+        float: left;
+        width: 33%;
+        padding-right: 5px;
+    }
+    
+    .fila::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .titulo , .boton , .precio{
+        font-size: 160%;
+    }
+  }
+  @media (max-width: 500px) {
+    .titulo , .boton , .precio{
+        font-size: 170%;
+    }
+}
+  @media (max-width: 420px) {
+    .titulo , .boton , .precio{
+        font-size: 160%;
+    }
 }
