@@ -1,0 +1,135 @@
+#foto1 {
+    width: 100%;
+    height: auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 6000px) {
+    .segundotexto {
+        font-family: applegaramound;
+        font-size: 300%;
+        margin: none;
+        display: block;
+        height: 5rem;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .segundotexto {
+        font-family: applegaramound;
+        font-size: 200%;
+        margin: 4%;
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .segundotexto {
+        font-family: applegaramound;
+        font-size: 120%;
+        margin: 4%;
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .segundotexto {
+        font-family: applegaramound;
+        font-size: 100%;
+        margin: 4%;
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#columna1 {
+    float: left;
+    height: 30rem;
+    width: 26rem;
+    margin-top: 8rem;
+    margin-left: 7rem;
+    margin-right: 2rem;
+
+}
+
+#columna2 {
+    height: 30rem;
+    width: 26rem;
+    float: left;
+}
+
+#columna3 {
+    float: left;
+    height: 30rem;
+    width: 26rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.fila::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    /* Para que sea responsiva */
+    width: 85%;
+}
+
+#verMas {
+    text-align: center;
+    font-family: applegaramound;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807;
+    width: 220px;
+    height: 50px;
+    padding: 2px 10px 10px 10px;
+    align-items: center;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+#verMas:hover {
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+
+}
+#columna4 {
+    float: left;
+    height: 30rem;
+    width: 26rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+h2 {
+    height: 1rem;
+    width: 1rem;
+    margin: none;
+}
