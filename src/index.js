@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import About404 from './components/acerca404/AcercaDe404';
+import About404 from './components/acerca404/About404';
 
 import './index.css';
 
