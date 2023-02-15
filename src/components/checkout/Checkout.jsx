@@ -5,15 +5,15 @@ export default class Checkout extends Component {
   render() {
     return (
         <> 
-            <div class="parent">
-                <div class="container-form">
-                    <div class="header-form">
-                        <div class="col-6"><h1>Checkout</h1></div>
-                        <div class="col-6"><h3>Resumen de compra</h3></div>
+            <div className="parent">
+                <div className="container-form">
+                    <div className="header-form">
+                        <div className="col-6"><h1>Checkout</h1></div>
+                        <div className="col-6"><h3>Resumen de compra</h3></div>
                     </div>
-                    <div class="data-form">
+                    <div className="data-form">
                         <form>
-                            <table class="checkout-table">
+                            <table classNameName="checkout-table">
                                 <tr>
                                     <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
                                     <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos"/> </td>
@@ -35,16 +35,16 @@ export default class Checkout extends Component {
                                     <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico"/> </td>
                                 </tr>
                             </table>
-                            <button class="continue-button">Continuar</button>
+                            <button className="continue-button">Continuar</button>
                         </form>
                     </div>
-                    <div class="summary-form">
-                        {/* <form action="">
-                            <img src="" alt=""></img><br>
+                    <div className="summary-form">
+                        <form action="">
+                            <img src="" alt=""></img><br></br>
                             <img src="" alt=""></img>
-                            <hr>
-                            <label class="total">Total:</label><br />
-                        </form> */}
+                            <hr></hr>
+                            <label className="total">Total:</label><br />
+                        </form>
                     </div>
                 </div>
             </div>
