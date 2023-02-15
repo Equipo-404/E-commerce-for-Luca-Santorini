@@ -64,8 +64,25 @@ img {
    top: -30px;
 }
 .boton{
-    background-color: black;
-    color: white;
+    text-align: center;
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807 ;
+    width: 220px;
+    height: 50px;
+    padding: 2px 10px 10px 10px;
+    align-items: center;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 10px;
+}
+.boton:hover{
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
 }
 .imgpolaroid{
     width: 100%;
@@ -97,3 +114,4 @@ img {
         font-size: 160%;
     }
 }
+

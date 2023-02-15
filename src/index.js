@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Playeras from './components/playeras/Playeras'
+import Playeras from './components/playeras/Playeras';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -14,14 +14,14 @@ const Playeras = () => {
       <Container >
         <Row>
           
-      <div class="segundotexto"><p>Playeras</p></div>
+      <div className="segundotexto"><p>Playeras</p></div>
 
      
       <div className='fila'>
         <Col md={3} >
           <div className='columna'>
           <div className='imagenespolaroid'>
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158169/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_cfbnyh.png" alt="playera negra de danny ocean babylon"></img></div>
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442581/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_elxe1p.png" alt="playera negra de danny ocean babylon"></img></div>
         
           <CardBody>
             <CardTitle  className='titulo' tag="h5">
@@ -41,7 +41,7 @@ const Playeras = () => {
         <Col md={3} >
         <div className='columna'>
           <div className='imagenespolaroid'>
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676227552/HARRY_STYLES_LOVE_ON_TOUR_BLANCA_ESPALDA_kurmeg.png" alt="playera negra de danny ocean babylon"></img></div>
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442366/HARRY_STYLES_LOVE_ON_TOUR_BLANCA_ESPALDA_lhzdil.png" alt="playera negra de danny ocean babylon"></img></div>
           <CardBody>
             <CardTitle className='titulo' tag="h5">
               Playera
@@ -59,7 +59,7 @@ const Playeras = () => {
         <Col md={3} >
         <div className='columna'>
           <div className='imagenespolaroid'>
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676228105/DADDY_YANKEE_X_LSSW_NEGRA_FRONTAL_q72mpq.png" alt="playera negra de danny ocean babylon"></img></div>
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442331/DADDY_YANKEE_X_LSSW_NEGRA_FRONTAL_g3xfgf.png" alt="playera negra de danny ocean babylon"></img></div>
           <CardBody>
             <CardTitle className='titulo' tag="h5">
               Playera
@@ -195,4 +195,4 @@ const Playeras = () => {
   )
 }
 
-export default Playeras
+export default Playeras;
