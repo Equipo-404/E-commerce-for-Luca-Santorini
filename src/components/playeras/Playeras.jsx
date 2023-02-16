@@ -5,7 +5,7 @@ import "./playeras.css";
 const Playeras = () => {
     return (
         <>
-            <h1>NavBar</h1>
+
             <div className='foto1'>
 
                 <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676229431/IMG_9868_vpuxgk.jpg" alt="hombre y mujer sentados en la acera con un skate al lado con payeras puestas love 4 galli blancas" className='img-fluid'></img>

@@ -1,11 +1,16 @@
 @font-face {
     font-family: coolvetica;
-    src: url("./coolvetica\ rg.otf");
+    src: url("../../fonts/coolvetica\ rg.otf");
 }
 
 @font-face {
     font-family: applegaramound;
-    src: url("./AppleGaramond-Bold.ttf");
+    src: url("../../fonts/AppleGaramond.ttf");
+}
+
+@font-face {
+    font-family: applegaramoundbase;
+    src: url("../../fonts/AppleGaramond-Bold.ttf");
 }
 
 * {
