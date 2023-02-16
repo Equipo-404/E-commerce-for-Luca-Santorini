@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ProductosAdmin from './components/productosAdmin/ProductosAdmin';
+// import Contacto from './components/contacto/Contacto';
 import './index.css';
-import Contacto from './components/contacto/Contacto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto/>
+    {/* <Contacto/> */}
+    <ProductosAdmin />
   </React.StrictMode>
 );
 
