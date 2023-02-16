@@ -1,13 +1,22 @@
 import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Inicio from './components/Inicio';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Todo me male sal</h1>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Inicio} />
+      </Switch>
+    </Router>
   );
 }
 
 export default App;
+
+
+
