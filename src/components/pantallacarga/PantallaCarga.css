@@ -1,0 +1,65 @@
+
+:root{
+    --color1:#474747;
+}
+
+body {
+   
+    background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675643872/Assets/espalda-javier-opacity_eh2bee.jpg);
+    background-size: 100%;
+    background-repeat: repeat;  
+
+}
+
+@media(min-width: 370px) {
+    body {
+        background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1676433898/Assets/espalda-javier-opacity_eh2bee_23fd08-mobile.jpg)
+    }
+}
+
+@media(min-width: 780px) {
+    body {
+        background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1676434029/Assets/espalda-javier-opacity_eh2bee_93c609tablet.jpg)
+    }
+}
+
+@media(min-width: 1090px) {
+    body {
+        background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675643872/Assets/espalda-javier-opacity_eh2bee.jpg);
+        
+    }
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+.square-loading-screen {
+    width: 51.8rem;
+    height: 21.2rem;
+    background-color: var(--color1);
+    margin: 12.5rem auto;
+    opacity: .9;
+    flex-basis: 90%;
+}
+
+@media (min-width: 600px) {
+    .container {
+      flex-wrap: nowrap;
+    }
+
+    .square-loading-screen {
+      flex-basis: 33%;
+    }}
+
+
+.red-logo {
+    background: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675639975/Assets/LOGO_RED_Mesa_de_trabajo_1_d3iigc.png);
+    width: 10.9rem;
+    height: 10.6rem;
+    margin: 5.45rem;
+   
+}

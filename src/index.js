@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Contacto from './components/contacto/Contacto';
+import PantallaCarga from './components/pantallacarga/PantallaCarga';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto />
+    <PantallaCarga/>
   </React.StrictMode>
 );
 
