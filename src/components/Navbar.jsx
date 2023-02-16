@@ -9,9 +9,10 @@ import iconoEliminar from './iconoEliminar.png';
 import { Link } from 'react-router-dom';
 
 
+
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar-bueno">
       <button id="botonAbrirNavbar2">
         <img src={iconoMenu}  id="iconoMenu" alt="icono del menú" />
       </button>
@@ -83,7 +84,7 @@ function Navbar2() {
             <Link to="/">Acerca de Luca santorini</Link>
           </li>
           <li>
-            <Link to="/">Acerca de equipo 404</Link>
+            <Link to="/About404">Acerca de equipo 404</Link>
           </li>
           <li>
             <Link to="/">Contacto</Link>

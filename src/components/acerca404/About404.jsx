@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Nav, NavItem, NavLink, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import "./styles-404.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -90,23 +90,6 @@ const About404 = () => {
 
   return (
     <Container fluid="fluid">
-      <Nav>
-        <NavItem>
-          <NavLink active href="#">
-            Link
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">
-            Another Link
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink disabled href="#">
-            Disabled Link
-          </NavLink>
-        </NavItem>
-      </Nav>
 
       <Row lg="2" sm="1">
 
@@ -141,7 +124,7 @@ const About404 = () => {
       </div>
 
       <div className="footer">
-        <img src="https://res.cloudinary.com/dtgebd1r6/image/upload/v1676484856/404/img/logo-luca_ogeves.png" alt="Logo Luca Santorini" />
+        <img className="person-photo" src="https://res.cloudinary.com/dtgebd1r6/image/upload/v1676484856/404/img/logo-luca_ogeves.png" alt="Logo Luca Santorini" />
       </div>
 
     </Container>
