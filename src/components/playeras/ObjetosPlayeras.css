@@ -34,38 +34,14 @@
     }
   }
 
-/*
-.segundotexto{
-    font-family: applegaramound;
-    font-size: 500%;
-    margin: 4%;
-}
-*/
-
-
-img {
-    /* Para que sea responsiva */
-    max-height: -100%;
-    width: 100%;
   
-
-}
-
-.titulo , .boton , .precio {
-    display: flex;
-    text-align: center;
-    font-size: 300%;
-    display: block; 
-    margin: 0px auto;
-    font-family: applegaramoundbase;
-}
-.titulo , .boton , .precio{
-   position: relative;
-   top: -30px;
+  
+  .imagen1 {
+    size-adjust:initial
 }
 .boton{
     text-align: center;
-    font-family: 'Apple Garamond', sans-serif;
+    font-family:'applegaramound';
     font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
@@ -84,34 +60,15 @@ img {
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
 }
-.imgpolaroid{
-    width: 100%;
-    
+.titulo , .boton , .precio {
+    display: flex;
+    text-align: center;
+    font-size: 150%;
+    display: block; 
+    margin: 0px auto;
+    font-family: applegaramoundbase;
 }
-@media (min-width: 650px) {
-    .columna {
-        float: left;
-        width: 33%;
-        padding-right: 5px;
-    }
-    
-    .fila::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    .titulo , .boton , .precio{
-        font-size: 160%;
-    }
-  }
-  @media (max-width: 500px) {
-    .titulo , .boton , .precio{
-        font-size: 170%;
-    }
+.titulo , .boton , .precio{
+   position: relative;
+   top: -30px;
 }
-  @media (max-width: 420px) {
-    .titulo , .boton , .precio{
-        font-size: 160%;
-    }
-}
-
