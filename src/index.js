@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PantallaCarga from './components/pantallacarga/PantallaCarga';
-
+// import PantallaCarga from './components/pantallacarga/PantallaCarga';
+import Carrito from './components/carrito/Carrito';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PantallaCarga/>
+    <Carrito/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,238 @@
+
+
+.navbar {
+    background: #808080;
+    height: 3rem;
+    border-top: 2px solid #808080;
+    /*  poner nav bar arriba abajo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.footer {
+    background: #808080;
+    height: 3rem;
+    border-top: 2px solid #808080;
+    /*  poner footer abajo */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.header-carrito {
+    font-family: applegaramond;
+    font-size: 46px;
+    font-weight: 700;
+    align-items: center;
+    margin: auto;
+    padding: 45px 15px 2px 15px;
+}
+
+.product-list {
+    width: 60%;
+    display: inline-table;
+    margin: 15px;
+    align-items: center;
+    border-right: 2px #808080 solid;
+
+
+}
+
+.shirt-picture {
+    height: 220.5px;
+    padding: 10px 10px 40px 10px;
+    border: 0.05px #c3c3c3 solid;
+    margin: 30px 10px 10px 10px;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 1.2%;
+
+}
+
+.shirt-picture:hover {
+    /*background-color:#ababab;*/
+    border: none;
+    transition: 0s;
+    animation: headShake;
+    animation-duration: 5s;
+    cursor: pointer;
+}
+
+.product-name {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 30px 10px 10px 10px;
+}
+
+.product-name:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.text-description {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 10px 20px 10px 10px;
+}
+
+.price {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+
+}
+
+
+
+.delete-item {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: right;
+    padding: 10px 20px 10px 10px;
+}
+
+.delete-item:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.resume-items {
+    width: 35%;
+    display: inline-table;
+    align-items: center;
+    margin: 10px;
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+}
+
+.total-title {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 50px 10px 50px 10px;
+}
+
+.product-resume {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 65%;
+    padding: 6px 0px 7px 2px;
+    border-spacing: 0px;
+   
+}
+
+.product-resume:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+
+}
+
+.price-resume {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    padding: 2px 10px 2px 0px;   
+    border-spacing: 0px;
+   
+
+}
+
+.total-description {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding: 40px 0px 2px 2px;
+    border-top: 2px solid #808080;
+    border-spacing: 0px;
+    
+}
+
+.total-price {
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: right;
+    padding: 40px 10px 2px 0px;
+    border-top: 2px solid #808080;   
+    border-spacing: 0px;
+}
+
+.checkout {
+    text-align: center;
+    padding: 60px 10px 10px 10px;
+}
+
+.button-carrito {
+    text-align: center;
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807 ;
+    width: 220px;
+    height: 50px;
+    padding: 2px 10px 10px 10px;
+    align-items: center;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 10px;
+}
+
+.button-carrito:hover {
+   
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+    
+}
+
+@media(min-width: 370px) {
+    .resume-items{
+        width: 100%;
+    }
+    .product-list{
+        width: 100%;
+    }
+    .shirt-picture{
+        height: 150.5px;
+    }
+}
+
+@media(min-width: 780px) {
+    .resume-items{
+        width: 40%;
+    }
+    .product-list{
+        width: 50%;
+    }
+    .shirt-picture{
+        height: 200.5px;
+    }
+}
+
+@media(min-width: 1090px) {
+    .resume-items{
+        width: 33%;
+    }
+    .product-list{
+        width: 60%;
+    }
+    .shirt-picture{
+        height: 220.5px;
+    }
+   
+}
