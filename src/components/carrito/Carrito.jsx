@@ -6,7 +6,7 @@ import 'animate.css';
   return (
     <>
 
-<section className="navbar">Navbar</section>
+{/*<section className="navbar">Navbar</section>*/}
 <br />
 <section>
 <h1 className="header-carrito">Tu bolsa</h1>

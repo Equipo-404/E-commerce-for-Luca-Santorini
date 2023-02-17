@@ -28,7 +28,7 @@ function Navbar() {
         <Link to="/">
           <img src={IconoUsuario}id="IconoUsuario" alt="icono de usuario" />
           </Link>
-        <Link to="/">
+        <Link to="/Carrito">
           <img src={iconoBolsaCompra} id="iconoBolsaCompra" alt="icono de bolsa de compras" />
           </Link>
       </div>
@@ -74,7 +74,7 @@ function Navbar2() {
             <Link to="/">Productos</Link>
           </li>
           <li>
-            <Link to="/">Mi bolsa</Link>
+            <Link to="/Carrito">Mi bolsa</Link>
           </li>
         </ul>
       </div>
