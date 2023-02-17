@@ -89,10 +89,10 @@
     display: table;
 }
 
-img {
-    /* Para que sea responsiva */
+/*img {
+     Para que sea responsiva 
     width: 85%;
-}
+}*/
 
 #verMas {
     text-align: center;

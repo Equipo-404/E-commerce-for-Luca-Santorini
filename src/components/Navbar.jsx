@@ -68,7 +68,7 @@ function Navbar2() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/">Novedades</Link>
+            <Link to="/PantallaCarga">Novedades</Link>
           </li>
           <li>
             <Link to="/">Productos</Link>
