@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Navbar() {
   return (
     <nav className="navbar-bueno">
@@ -68,7 +69,7 @@ function Navbar2() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/PantallaCarga">Novedades</Link>
+            <Link to="/">Novedades</Link>
           </li>
           <li>
             <Link to="/">Productos</Link>

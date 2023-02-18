@@ -1,147 +1,147 @@
 .navbar-bueno {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: .5rem;
-  }
-  .navbar-section {
-    display: flex;
-    align-items: center;
-  }
-  .navbar-center {
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-  #iconoMenu{
-    background-color: transparent !important;
-    width: 2rem;
-    height: 2rem;
-  }
-  #iconoCerrar{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  h2{
-    margin-left: .5rem;
-    margin-right: .5rem;
-    font-family: 'Coolvetica', sans-serif; 
-    margin: 0;                                           
-  }
-  input{
-    background-color:transparent !important;
-    border: none;
-    color: black;
-    height: 2rem;
-    font-size: 1rem;
-    font-family: 'Coolvetica', sans-serif;  
-  }
-  #iconoLucaNegro{
-    margin-left: .5rem;
-    margin-right: .5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-  #iconoBuscar{
-    margin-left: .5rem;
-    margin-right: .5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-  #IconoUsuario{
-    margin-left: 1rem;
-    margin-right: .5rem;
-    width: 2rem;
-    height: 2rem;
-  }
-  #iconoBolsaCompra{
-    margin-left: .5rem;
-    margin-right: 1rem;
-    width: 2rem;
-    height: 2rem;
-  }
-  @media (max-width: 647px) {
-    h2 {
-      display: none;
-    }
-    #iconoLucaNegro {
-      display: none;
-    }
-  }
-  @media (max-width: 410px) {
-    #iconoBuscar{
-      display: none;
-    }
-    input {
-      display: none;
-    }
-    div.navbar-busqueda{
-      display: none;
-    }
-  }
-  #navbar2 {
-    opacity: .8;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: .5rem;
+}
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+.navbar-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#iconoMenu{
+  background-color: transparent !important;
+  width: 2rem;
+  height: 2rem;
+}
+#iconoCerrar{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+h2{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  font-family: 'Coolvetica', sans-serif; 
+  margin: 0;                                           
+}
+input{
+  background-color:transparent !important;
+  border: none;
+  color: black;
+  height: 2rem;
+  font-size: 1rem;
+  font-family: 'Coolvetica', sans-serif;  
+}
+#iconoLucaNegro{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+#iconoBuscar{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+#IconoUsuario{
+  margin-left: 1rem;
+  margin-right: .5rem;
+  width: 2rem;
+  height: 2rem;
+}
+#iconoBolsaCompra{
+  margin-left: .5rem;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+@media (max-width: 647px) {
+  h2 {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width:  300px;
-    background-color: #EEE8AA;
-    height: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
-  #botonAbrirNavbar2 {
-    background-color: transparent !important;
-    border:none;
+  #iconoLucaNegro {
+    display: none;
   }
-  #navbar2 button {
-    display: block;
-    padding: 10px;
-    background-color: transparent !important;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
+}
+@media (max-width: 410px) {
+  #iconoBuscar{
+    display: none;
   }
-  #navbar2 a {
-    text-decoration: none;
-    color: #333;
+  input {
+    display: none;
   }
-  .navbar-busqueda{
-    background-color: transparent !important;
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
+  div.navbar-busqueda{
+    display: none;
   }
-  #navar2-seccion1 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-    font-size: 2rem;
-    font-family: Coolvetica, sans-serif;
-  }
-  #navar2-seccion1 li {
-    padding: 10px;
-    font-weight: 800;
-  }
-  #navar2-seccion1 {
-    padding-bottom: 90%;
-  }
-  #navar2-seccion2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-    font-size: 1.5rem;
-    font-family: Coolvetica, sans-serif;
-  }
-  #navar2-seccion2 li {
-    padding: 10px;
-  }
+}
+#navbar2 {
+  opacity: .8;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width:  300px;
+  background-color: #EEE8AA;
+  height: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#botonAbrirNavbar2 {
+  background-color: transparent !important;
+  border:none;
+}
+#navbar2 button {
+  display: block;
+  padding: 10px;
+  background-color: transparent !important;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#navbar2 a {
+  text-decoration: none;
+  color: #333;
+}
+.navbar-busqueda{
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+#navar2-seccion1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 2rem;
+  font-family: Coolvetica, sans-serif;
+}
+#navar2-seccion1 li {
+  padding: 10px;
+  font-weight: 800;
+}
+#navar2-seccion1 {
+  padding-bottom: 90%;
+}
+#navar2-seccion2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 1.5rem;
+  font-family: Coolvetica, sans-serif;
+}
+#navar2-seccion2 li {
+  padding: 10px;
+}

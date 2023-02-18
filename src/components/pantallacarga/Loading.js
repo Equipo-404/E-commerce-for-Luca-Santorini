@@ -5,9 +5,9 @@ import 'animate.css';
 
 function Loading(){
     return (
-       
-        <Route exact path="/PantallaCarga" component={PantallaCarga} />
-     
+        
+          <Route exact path="/PantallaCarga" component={PantallaCarga} />
+   
     );
 }
 

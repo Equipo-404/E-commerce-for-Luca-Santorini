@@ -3,35 +3,38 @@
     --color1:#474747;
 }
 
-body {
-   
-    background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675643872/Assets/espalda-javier-opacity_eh2bee.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;  
-}
-
 @media(max-width: 438px) {
-    body {
+    .pantallacarga-body {
         background-repeat:repeat;  
-        background-size: 110%;
+        background-size:auto;
+        background-size: cover;
     }
 }
 
 @media(min-width: 370px) {
-    body {
+    .pantallacarga-body {
+        background-repeat: no-repeat;  
+        background-size:auto;
+        background-size: cover;
         background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1676433898/Assets/espalda-javier-opacity_eh2bee_23fd08-mobile.jpg)
     }
 }
 
 @media(min-width: 780px) {
-    body {
+    .pantallacarga-body {
+        background-repeat: no-repeat; 
+        background-size: cover;
+   
+        
         background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1676434029/Assets/espalda-javier-opacity_eh2bee_93c609tablet.jpg)
     }
 }
 
 @media(min-width: 1090px) {
-    body {
+    .pantallacarga-body {
         background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675643872/Assets/espalda-javier-opacity_eh2bee.jpg);
+        background-size:auto;
+        background-repeat: no-repeat;  
         
     }
 }
@@ -67,4 +70,8 @@ body {
     height: 10.6rem;
     margin: 5.45rem;
    
+}
+
+.pantallacarga-body{
+    height: 100vh;
 }
