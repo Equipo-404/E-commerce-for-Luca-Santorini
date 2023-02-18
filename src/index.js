@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Index }  from './components/login/Index';
 import './index.css';
-import Contacto from './components/contacto/Contacto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto />
+    <Index/>
   </React.StrictMode>
 );
 
