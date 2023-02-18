@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 300px;
+    padding: 20px;
+    background: rgb(205, 205, 205);
+    margin: auto;
+    margin-top: 80px
+    
+}
+.title{
+    text-align: center;
+    padding: 10px;
+
+}
+.pad{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+input{
+    padding: 6px;
+    text-align: center;
+}
+input[type="submit"]{
+width: 100%;
+border: 1px;
+color: white;
+border-radius: 5px;
+background-color: black;
+padding: 7px;
+align-content: center;
+
+}
+.name, .email, .password, .date{
+    display: flex;
+    flex-direction: column;
+}
+.count{
+    text-align: center;
+}
+
+
+
+
