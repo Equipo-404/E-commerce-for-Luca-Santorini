@@ -12,7 +12,7 @@ import 'animate.css';
 <h1 className="header-carrito">Tu bolsa</h1>
 </section>
     {/* Tabla de lista de productos */} 
-    <table className="product-list" style={{float: "left"}}>
+    <table className="product-list">
         
         {/*item 1*/}
         <tr>
