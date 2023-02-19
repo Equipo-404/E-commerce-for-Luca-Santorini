@@ -6,6 +6,8 @@ import Inicio from './components/Inicio';
 import About404 from './components/acerca404/About404';
 import Items from './components/playeras/PlayerasObjetos';
 import Novedades from './components/playeras/novedades';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route exact path="/Items" component={Items} />
         <Route exact path="/novedades" component={Novedades} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }
