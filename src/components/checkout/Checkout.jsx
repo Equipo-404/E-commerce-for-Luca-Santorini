@@ -1,19 +1,23 @@
 import './Checkout.css';
 import React, { Component } from 'react';
+import {
+    Table,
+    Button,
+    Container,
+  } from "reactstrap";
 
 export default class Checkout extends Component {
   render() {
     return (
         <> 
-            <div className="parent">
+            <div className="parent-checkout">
                 <div className="container-form">
-                    <div className="header-form">
-                        <div className="col-6"><h1>Checkout</h1></div>
-                        <div className="col-6"><h3>Resumen de compra</h3></div>
-                    </div>
-                    <div className="data-form">
-                        <form>
+                    {/* <div><h3>Resumen de compra</h3></div> */}
+                <div className="data-form">
                             <table classNameName="checkout-table">
+                                <thead>
+                                    <td colSpan={2}><h1>Checkout</h1></td>
+                                </thead>
                                 <tr>
                                     <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
                                     <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos"/> </td>
@@ -34,17 +38,50 @@ export default class Checkout extends Component {
                                 <tr>
                                     <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico"/> </td>
                                 </tr>
+                                <tr>
+                                    <td colSpan={2}><button className="continue-button">Continuar</button></td>
+                                </tr>
                             </table>
-                            <button className="continue-button">Continuar</button>
-                        </form>
+                </div>
+
+                    <div >
                     </div>
                     <div className="summary-form">
-                        <form action="">
-                            <img src="" alt=""></img><br></br>
-                            <img src="" alt=""></img>
+                    <table className="resume-items">
+                        <tr>
+                            <th colspan="2" className="total-title">Total</th>
+                        </tr>
+                        {/*item 1*/}
+                        <tr>
+                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                            <td className="price-resume">$ 100.00 mxn</td>
+                        </tr>
+                        {/*item 2*/}
+                        <tr>
+                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                            <td className="price-resume">$ 100.00 mxn</td>
+                        </tr>
+                        {/*item 3*/}
+                        <tr>
+                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                            <td className="price-resume">$ 100.00 mxn</td>
+                        </tr>
+
+                        {/*Total tabla resumen de lista de productos*/}
+                        <tr>
+                            <td colspan="1" className="total-description">Suma total</td>
+                            <td colspan="1" className="total-price">$ 300.00 mxn</td>
+                        </tr>
+
+                        <tr>
+                            <td className="checkout" colspan="2" >
+                                <button className="button-carrito">Checkout</button>
+                            </td>
+                            
+                        </tr>
+                        </table>
                             <hr></hr>
                             <label className="total">Total:</label><br />
-                        </form>
                     </div>
                 </div>
             </div>

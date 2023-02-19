@@ -6,7 +6,7 @@ import Contacto from './components/contacto/Contacto';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Contacto />
+    {/* <Contacto /> */}
   </React.StrictMode>
 );
 

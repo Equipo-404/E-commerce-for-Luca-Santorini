@@ -1,21 +1,16 @@
-.parent{
+.parent-checkout{
     display: grid;
     place-items: center;
 }
 
-.header-form {
-    margin: 1rem;
-    width: 100%;
-    display: flex;
-}
-
 .container-form {
-    padding-top: 5rem;
+    padding-top: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60rem;
+    height: 40rem;
 }
 
 .data-form {
@@ -24,6 +19,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    border-right: 1px solid #000;
 }
 
 .summary-form {
@@ -42,34 +38,23 @@
     width: 50%;
 }
 
-.checkout-table td {
-    padding-top: .75rem;
+table {
+    width: 80%;
 }
 
-form button {
+td button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
 }
 
 input {
     width: 100%;
-    height: 2.5rem;
+    height: 2rem;
     border: 0;
     outline: 0;
     background-color: #F9F9F9;
     border: 1px solid #000;
 }
-
-image {
-    border: 1px solid #000;
-}
-
-/* .logo img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 250px;
-} */
 

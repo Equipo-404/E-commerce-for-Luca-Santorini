@@ -17,5 +17,5 @@ formulario.addEventListener('submit', (e) => {
         })
     });
 
-    alert ("Mensaje registrado éxitosamente");
+    // alert ("Mensaje registrado éxitosamente");
 });

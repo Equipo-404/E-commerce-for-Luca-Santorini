@@ -13,20 +13,22 @@
 
 h1{
     font-family: 'Coolvetica', sans-serif;
+    padding-bottom: 3rem;
 }
 
-.parent{
+.parent-contact{
     display: grid;
     place-items: center;
+    padding-top: 7rem;
 }
 
-.container-form {
+.container-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
     border-radius: 5px;
-
+    width: 50rem;
+    height: 40rem;
 }
 
 .info-form {
@@ -35,24 +37,24 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30rem;
-    width: 20rem;
-    border-left: 1px solid #000;
+    height: 100%;
+    width: 50%;
 }
 
 .info-form label{
     align-items: left;
-    margin-bottom: 1rem;
     font-family: applegaramoundbase;
 }
 
 .info-form input{
+    width: 100%;
     align-items: left;
     background: none;
     border-bottom: 1px solid #000;
 }
 
 .info-form textarea{
+    width: 100%;
     align-items: left;
     resize: none;
     height: 5rem;
@@ -61,7 +63,6 @@ h1{
 }
 
 .info-form button{
-    align-self: center;
     font-family: 'Apple Garamond', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
@@ -72,27 +73,20 @@ h1{
     padding: 2px 10px 10px 10px;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 5px;
+    justify-items: center;
 }
 
 .image-form {
     float:left;
     display: flex;
     place-items: center;
-    height: 30rem;
-    width: 20rem;
+    height: 100%;
+    width: 50%;
 }
 
 .image-form img {
-    height: 100%;
+    background-size: cover; 
     width: 100%;
-}
-
-.logo img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 250px;
 }
 
 input, textarea {
