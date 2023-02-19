@@ -1,0 +1,110 @@
+@font-face {
+    font-family: coolvetica;
+    src: url("./coolvetica\ rg.otf");
+  }
+@font-face {
+    font-family: applegaramound;
+    src: url("./AppleGaramond-Bold.ttf");
+  }
+  @font-face {
+    font-family: applegaramoundbase;
+    src: url("./AppleGaramond-Bold.ttf");
+  }
+  .descripcionleo{
+    font-family:applegaramoundbase ;
+  }
+ * {
+    box-sizing: border-box;
+}@media only screen and (max-width: 6000px) {
+    .segundotextoleo{
+        font-family:applegaramound;
+        font-size: 500%;
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .segundotextoleo{
+        font-family: applegaramound;
+        font-size: 500%;
+        margin: 7%;
+    }
+  }
+ @media (max-width: 525px) {
+    .segundotextoleo{
+        font-family: applegaramound;
+        font-size: 500%;
+        margin: 13%;
+    }
+  }
+
+  
+  
+  #imgleo {
+    width: 100%;
+    
+    
+
+}
+.botonleo{
+    text-align: center;
+    font-family:'applegaramound';
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807 ;
+    width: 220px;
+    height: 50px;
+    padding: 2px 10px 10px 10px;
+    align-items: center;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 10px;
+}
+.botonleo:hover{
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+}
+.titulo , .botonleo , .precioleo {
+    display: flex;
+    text-align: center;
+    font-size: 150%;
+    display: block; 
+    margin: 0px auto;
+    font-family: applegaramoundbase;
+}
+.titulo , .botonleo , .precioleo{
+   position: relative;
+   top: -30px;
+}
+.imagenesplayerasleo{
+    width: 100%;
+}
+
+#items-containerleo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 756px) {
+    #items-containerleo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 525px) {
+    #items-containerleo {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .opcioneslibretas{
+    font-family:applegaramound;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  .opcioneslibretas:hover{
+    background-color: #eee8aa;
+    color: black;
+    transition: 0.5s;
+  }

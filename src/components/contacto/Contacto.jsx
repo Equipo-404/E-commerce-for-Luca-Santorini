@@ -24,8 +24,9 @@ export default class Contacto extends Component {
                   
                   <label for="msg">Mensaje:</label><br />
                   <textarea id="msg" name="user_message" required></textarea><br />
-                  
-                  <button type="submit" className="contactoButton" id="enviarContacto" >Enviar</button>
+                  <div className='container-contactoButton'>
+                    <button type="submit" className="contactoButton" id="enviarContacto" >Enviar</button>
+                  </div>
               </form>
             </div>
           </div>

@@ -12,10 +12,10 @@ src: url("../../assets/fonts/AppleGaramond-Bold.ttf");
     display: grid;
     height: 100vh;
     place-items: center;
-    background-image: url(https://asset.cloudinary.com/ds3wzgtfa/79557e8dde2022ac956c5454e753445c.png);
+    background-image: url(https://res.cloudinary.com/ds3wzgtfa/image/upload/v1676775462/espalda_javier_BG_bcr697.jpg);
     background-size:100%;
     background-repeat: no-repeat; 
-    /* background-size: cover;  */
+    background-size: cover; 
 }
 
 .containerTable {

@@ -13,75 +13,67 @@ export default class Checkout extends Component {
             <div className="parent-checkout">
                 <div className="container-form">
                     {/* <div><h3>Resumen de compra</h3></div> */}
-                <div className="data-form">
-                            <table classNameName="checkout-table">
-                                <thead>
-                                    <td colSpan={2}><h1>Checkout</h1></td>
-                                </thead>
-                                <tr>
-                                    <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
-                                    <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos"/> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"> <input colspan="2" type="text" id="address" name="user_address" placeholder="Domicilio"/> </td>
-                                </tr>
-                                <tr>
-                                    <td> <input type="number" id="zip" name="user_zip" placeholder="Código postal"/> </td>
-                                    <td> <input type="text" id="location" name="user_location" placeholder="Municipio" /> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"> <input type="text" id="state" name="user_state" placeholder="Estado"/> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"> <input type="text" id="reference" name="user_reference" placeholder="Referencia (Opcional)"/> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico"/> </td>
-                                </tr>
-                                <tr>
-                                    <td colSpan={2}><button className="continue-button">Continuar</button></td>
-                                </tr>
-                            </table>
-                </div>
-
-                    <div >
+                    <div className="data-form">
+                        <table classNameName="checkout-table">
+                            <thead>
+                                <td colSpan={2}><h1>Checkout</h1></td>
+                            </thead>
+                            <tr>
+                                <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
+                                <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos"/> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <input colspan="2" type="text" id="address" name="user_address" placeholder="Domicilio"/> </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="number" id="zip" name="user_zip" placeholder="Código postal"/> </td>
+                                <td> <input type="text" id="location" name="user_location" placeholder="Municipio" /> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <input type="text" id="state" name="user_state" placeholder="Estado"/> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <input type="text" id="reference" name="user_reference" placeholder="Referencia (Opcional)"/> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico"/> </td>
+                            </tr>
+                        </table>
                     </div>
                     <div className="summary-form">
-                    <table className="resume-items">
-                        <tr>
-                            <th colspan="2" className="total-title">Total</th>
-                        </tr>
-                        {/*item 1*/}
-                        <tr>
-                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                            <td className="price-resume">$ 100.00 mxn</td>
-                        </tr>
-                        {/*item 2*/}
-                        <tr>
-                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                            <td className="price-resume">$ 100.00 mxn</td>
-                        </tr>
-                        {/*item 3*/}
-                        <tr>
-                            <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                            <td className="price-resume">$ 100.00 mxn</td>
-                        </tr>
+                        <table className="resume-items">
+                            <tr>
+                                <th colspan="2" className="total-title">Total</th>
+                            </tr>
+                            {/*item 1*/}
+                            <tr>
+                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                                <td className="price-resume">$ 100.00 mxn</td>
+                            </tr>
+                            {/*item 2*/}
+                            <tr>
+                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                                <td className="price-resume">$ 100.00 mxn</td>
+                            </tr>
+                            {/*item 3*/}
+                            <tr>
+                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
+                                <td className="price-resume">$ 100.00 mxn</td>
+                            </tr>
 
-                        {/*Total tabla resumen de lista de productos*/}
-                        <tr>
-                            <td colspan="1" className="total-description">Suma total</td>
-                            <td colspan="1" className="total-price">$ 300.00 mxn</td>
-                        </tr>
+                            {/*Total tabla resumen de lista de productos*/}
+                            <tr>
+                                <td colspan="1" className="total-description">Suma total</td>
+                                <td colspan="1" className="total-price">$ 300.00 mxn</td>
+                            </tr>
 
-                        <tr>
-                            <td className="checkout" colspan="2" >
-                                <button className="button-carrito">Checkout</button>
-                            </td>
-                            
-                        </tr>
+                            <tr>
+                                <td className="checkout" colspan="2" >
+                                    <button className="button-carrito">Checkout</button>
+                                </td>
+                            </tr>
                         </table>
-                            <hr></hr>
-                            <label className="total">Total:</label><br />
+                        <hr></hr>
                     </div>
                 </div>
             </div>

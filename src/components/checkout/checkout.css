@@ -5,6 +5,7 @@
 
 .container-form {
     padding-top: 10rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

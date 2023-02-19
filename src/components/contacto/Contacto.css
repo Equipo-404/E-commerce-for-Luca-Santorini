@@ -20,18 +20,21 @@ h1{
     display: grid;
     place-items: center;
     padding-top: 7rem;
+    padding-bottom: 3rem;
 }
 
-.container-container {
+.container-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     width: 50rem;
     height: 40rem;
+    border: 1px solid #000;
 }
 
 .info-form {
+    font-size: 20px;
     background-color: #D9D9D9;
     float:left;
     display: flex;
@@ -39,6 +42,13 @@ h1{
     align-items: center;
     height: 100%;
     width: 50%;
+}
+
+.container-contactoButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
 }
 
 .info-form label{
@@ -49,7 +59,7 @@ h1{
 .info-form input{
     width: 100%;
     align-items: left;
-    background: none;
+    background: #FFF;
     border-bottom: 1px solid #000;
 }
 
@@ -69,7 +79,7 @@ h1{
     background: #040807;
     border: 1px solid #040807 ;
     width: 150px;
-    height: 30px;
+    height: 35px;
     padding: 2px 10px 10px 10px;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 5px;
@@ -82,10 +92,12 @@ h1{
     place-items: center;
     height: 100%;
     width: 50%;
+    border-right: 1px solid #000;
 }
 
 .image-form img {
-    background-size: cover; 
+    background-size: cover;
+    height: 100%; 
     width: 100%;
 }
 
