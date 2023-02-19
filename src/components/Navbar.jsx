@@ -82,10 +82,10 @@ function Navbar2() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/">Novedades</Link>
+            <Link to="/Novedades">Novedades</Link>
           </li>
           <li>
-            <Link to="/">Productos</Link>
+            <Link to="/Items">Productos</Link>
           </li>
           <li>
             <Link to="/">Mi bolsa</Link>
