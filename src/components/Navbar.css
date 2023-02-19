@@ -1,4 +1,4 @@
-.navbar-bueno {
+.NavbarPrincipal {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -19,6 +19,19 @@
     text-align: center;
     align-items: center;
   }
+  nav .navbar-center {
+    transition: opacity 0.5s ease-in-out;
+  }
+  nav.faded .navbar-center {
+    opacity: 0;
+  }
+  nav .navbar-busqueda {
+    transition: opacity 0.5s ease-in-out;
+  }
+  nav.faded .navbar-busqueda {
+    opacity: 0;
+  }
+
   #iconoMenu{
     background-color: transparent !important;
     width: 2rem;
@@ -28,19 +41,22 @@
     width: 1.5rem;
     height: 1.5rem;
   }
-  h2{
+  #h2navbar{
     margin-left: .5rem;
     margin-right: .5rem;
     font-family: 'Coolvetica', sans-serif; 
-    margin: 0;                                           
+    margin: 0;                                       
   }
-  input{
+  #inputBusqueda{
     background-color:transparent !important;
     border: none;
     color: black;
     height: 2rem;
     font-size: 1rem;
     font-family: 'Coolvetica', sans-serif;  
+  }
+  #inputBusqueda:focus {
+    outline: none;
   }
   #iconoLucaNegro{
     margin-left: .5rem;
@@ -67,10 +83,7 @@
     height: 2rem;
   }
   @media (max-width: 647px) {
-    h2 {
-      display: none;
-    }
-    #iconoLucaNegro {
+    #h2navbar {
       display: none;
     }
   }
@@ -78,14 +91,14 @@
     #iconoBuscar{
       display: none;
     }
-    input {
+    .buscador {
       display: none;
     }
     div.navbar-busqueda{
       display: none;
     }
   }
-  #navbar2 {
+  #NavbarDesplegabeLateral {
     opacity: .8;
     display: none;
     position: fixed;
@@ -101,7 +114,7 @@
     background-color: transparent !important;
     border:none;
   }
-  #navbar2 button {
+  #NavbarDesplegabeLateral button {
     display: block;
     padding: 10px;
     background-color: transparent !important;
@@ -109,7 +122,7 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
-  #navbar2 a {
+  #NavbarDesplegabeLateral a {
     text-decoration: none;
     color: #333;
   }
@@ -119,7 +132,7 @@
     align-items: center;
     border: 2px solid black;
   }
-  #navar2-seccion1 ul {
+  #navbar2-seccion1 ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -127,14 +140,14 @@
     font-size: 2rem;
     font-family: Coolvetica, sans-serif;
   }
-  #navar2-seccion1 li {
+  #navbar2-seccion1 li {
     padding: 10px;
     font-weight: 800;
   }
-  #navar2-seccion1 {
-    padding-bottom: 90%;
+  #navbar2-seccion1 {
+    padding-bottom: 80%;
   }
-  #navar2-seccion2 ul {
+  #navbar2-seccion2 ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -142,6 +155,8 @@
     font-size: 1.5rem;
     font-family: Coolvetica, sans-serif;
   }
-  #navar2-seccion2 li {
+  #navbar2-seccion2 li {
     padding: 10px;
   }
+
+ 

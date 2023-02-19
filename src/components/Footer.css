@@ -1,0 +1,91 @@
+#iconoLucaBlanco {
+  margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+#whatsappLogo {
+    width: 1.5rem;
+    height: 1.5em;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    filter: invert(1);
+}
+
+#instagramLogo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    filter: invert(1);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: end;
+    background-color: #474747;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer-section1 ul {
+    list-style: none;
+    border: none;
+    font-size: 1rem;
+    font-family: Coolvetica, sans-serif;
+}
+#footer-section1 ul {
+  margin-top: 1rem;
+}
+
+#footer-section1 ul li {
+    margin-top: .5rem;
+}
+
+#footer-section1 ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#TextoContactoFooter {
+    color: white;
+    text-decoration: none;
+    font-family: Coolvetica, sans-serif;
+    margin: auto; 
+
+}
+
+#footer-section3 {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+  .arriba {
+    flex: 1;
+  }
+  
+  .abajo {
+    flex: 1;
+  }
+
+@media (max-width: 572px) {
+    #footer-section1 {
+      display: none;
+    }
+    #footer-section3{
+      display: none;
+    }
+    #iconoLucaBlanco {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 10rem;
+        max-width: 100%; 
+        height: auto;
+    }
+
+  }
