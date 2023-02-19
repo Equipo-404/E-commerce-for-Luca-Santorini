@@ -91,7 +91,7 @@
     #iconoBuscar{
       display: none;
     }
-    input {
+    .buscador {
       display: none;
     }
     div.navbar-busqueda{

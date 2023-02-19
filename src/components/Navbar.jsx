@@ -41,7 +41,7 @@ function Navbar() {
           <img src={iconoBuscar} id="iconoBuscar" alt="icono de búsqueda" />
           <input id="inputBusqueda" type="text" />
         </div>
-        <Link to="/">
+        <Link to="./LogIn">
           <img src={IconoUsuario}id="IconoUsuario" alt="icono de usuario" />
           </Link>
         <Link to="/Carrito">
