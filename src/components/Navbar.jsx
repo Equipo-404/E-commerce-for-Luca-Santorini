@@ -102,7 +102,7 @@ function Navbar2() {
             <Link to="/About404">Acerca de equipo 404</Link>
           </li>
           <li>
-            <Link to="/">Contacto</Link>
+            <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
       </div>

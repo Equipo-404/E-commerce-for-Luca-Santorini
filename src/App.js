@@ -13,6 +13,10 @@ import Footer from './components/Footer';
 import Carrito from './components/carrito/Carrito'
 import PantallaCarga from './components/pantallacarga/PantallaCarga';
 import 'animate.css';
+import Contacto from './components/contacto/Contacto';
+import Checkout from './components/checkout/Checkout';
+import AdminProductos from './components/adminproductos/AdminProductos';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +55,9 @@ function App() {
         <Route exact path="/Items" component={Items} />
         <Route exact path="/novedades" component={Novedades} />
         <Route exact path="/Carrito" component={Carrito} />
+        <Route exact path="/Checkout" component={Checkout} />
+        <Route exact path="/Contacto" component={Contacto} />
+        <Route exact path="/AdminProductos" component={AdminProductos} /> 
       </Switch>
       <Footer/>
     </Router>
