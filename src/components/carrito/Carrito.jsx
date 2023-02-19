@@ -89,8 +89,6 @@ import 'animate.css';
             
         </tr>
         </table>
-        <br /><br /><br />
-        <footer className="footer">Footer</footer>
     </>
 
 
