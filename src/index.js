@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import Items from './components/playeras/PlayerasObjetos'
-
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
