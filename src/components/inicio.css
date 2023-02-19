@@ -8,16 +8,16 @@
     justify-content: center;
     max-width: auto;
 }
-#columna1 {
+#Imagen1NovedadesInicio {
     margin-top: 4rem;
     height: 30rem;
     width: 26rem;
 }
-#columna2 {
+#Imagen2NovedadesInicio {
     height: 30rem;
     width: 26rem;
 }
-#columna3 {
+#Imagen3NovedadesInicio {
     margin-top: 4rem;
     height: 30rem;
     width: 26rem;
@@ -139,10 +139,10 @@
 }
 
 @media (max-width: 1266px) {
-    #columna1 {
+    #Imagen1NovedadesInicio {
         margin-top: 0;
     }
-    #columna3 {
+    #Imagen3NovedadesInicio {
         margin-top: 0;
     }
   }
