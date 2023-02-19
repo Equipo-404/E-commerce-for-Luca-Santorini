@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Navbar() {
   const navbarRef = useRef(null);
 
@@ -41,9 +42,9 @@ function Navbar() {
           <input id="inputBusqueda" type="text" />
         </div>
         <Link to="/">
-          <img src={IconoUsuario} id="IconoUsuario" alt="icono de usuario" />
-        </Link>
-        <Link to="/">
+          <img src={IconoUsuario}id="IconoUsuario" alt="icono de usuario" />
+          </Link>
+        <Link to="/Carrito">
           <img src={iconoBolsaCompra} id="iconoBolsaCompra" alt="icono de bolsa de compras" />
         </Link>
       </div>
@@ -88,7 +89,7 @@ function Navbar2() {
             <Link to="/Items">Productos</Link>
           </li>
           <li>
-            <Link to="/">Mi bolsa</Link>
+            <Link to="/Carrito">Mi bolsa</Link>
           </li>
         </ul>
       </div>
