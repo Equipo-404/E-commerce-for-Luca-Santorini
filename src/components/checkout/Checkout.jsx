@@ -1,4 +1,4 @@
-import './checkout.css';
+import './Checkout.css';
 import React, { Component } from 'react';
 import {
     Table,

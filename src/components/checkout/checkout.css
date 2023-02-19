@@ -31,11 +31,16 @@
 }
 
 .continue-button {
-    margin-top: 3rem;
-    margin-left: auto; margin-right: auto;
-    background-color: #000;
-    color: #FFF;
-    width: 50%;
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807 ;
+    width: 150px;
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 5px;
 }
 
 table {
