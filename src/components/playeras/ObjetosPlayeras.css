@@ -66,7 +66,7 @@
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
 }
-.titulo , .botonleo , .precioleo {
+.botonleo , .precioleo {
     display: flex;
     text-align: center;
     font-size: 150%;
@@ -74,7 +74,7 @@
     margin: 0px auto;
     font-family: applegaramoundbase;
 }
-.titulo , .botonleo , .precioleo{
+ .botonleo , .precioleo{
    position: relative;
    top: -30px;
 }
