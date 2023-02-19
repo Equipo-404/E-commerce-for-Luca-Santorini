@@ -1,19 +1,23 @@
 import './AboutLuc.css';
-import React from "react";
+import React, { Component } from "react";
 
-function AboutLuc() {
+export default class AboutLuc extends Component {
+  render(){
+
+  
   return (
     <>
-      <div>
-        <h2 style={{ fontSize: "5vm" }}>Acerca de...</h2>
+    <div className='body-style'>
+      <div className='div2'>
+        <h1 className='myh1' >Acerca de...</h1>
       </div>
       <div className="wrapper2">
         <figure>
           <img
             className="img-fluid"
-            src="https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132871/fotos/Imagen_de_WhatsApp_2023-01-22_a_las_19.33.59_mbzmjv.jpg"
-          />
-          <figcaption>
+            src="https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132871/fotos/Imagen_de_WhatsApp_2023-01-22_a_las_19.33.59_mbzmjv.jpg"/>
+          
+         
             <div className="col-sm-12 col-md-6 col-lg-4">
               <h3>Mas que un icono, homie</h3>
               <p>
@@ -26,12 +30,12 @@ function AboutLuc() {
                 importar el cliente o la situacion, esto simboliza el corazón
               </p>
             </div>
-          </figcaption>
+          
         </figure>
       </div>
       <div className="wrapper">
         <img
-          className="img-responsive w-100"
+          className="img-fluid2"
           src="https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132908/fotos/Imagen_de_WhatsApp_2023-01-22_a_las_19.33.58_oldr10.jpg"
         />
         <div className="col-lg-4 col-md-6 col-sm-12 float-right">
@@ -48,7 +52,7 @@ function AboutLuc() {
       </div>
       <div className="wrapper3">
         <img
-          className="img-responsive w-100"
+          className="img-fluid3"
           src="https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132899/fotos/podriairestoenQuienesSomos_ozg2x2.jpg"
         />
         <div className="col-md-6 col-sm-12 col-lg-4">
@@ -64,6 +68,11 @@ function AboutLuc() {
           </p>
         </div>
       </div>
+      </div>
       </>
       );
      }
+    }
+ 
+    
+     

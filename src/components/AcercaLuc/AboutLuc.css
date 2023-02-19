@@ -1,29 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-div1, h1{
 
-    background-color: #EEE8AA;
-    font-family:Apple Garamond Bold;
-    
-}
-div2, h2{
+
+.myh1{
     text-align: center;
     background-color: #040807;
-    
-    color:#ffffff;
+    color: #ffffff;
+    padding: 10px;
 }
 
-
-    body {
-        background-image: url(https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132813/fotos/last_bernacholo-19_j2unz6.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+.myh1 {
     
-        
-        
+    margin: 0;
+    font-family:Apple Garamond Bold;
+}
+ 
 
-        
-    }
+  
+
+
+
+   
+  
+  
+
+
+.body-style {
+    background-image: url(https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132813/fotos/last_bernacholo-19_j2unz6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 80px;
+  }
       
      
 
@@ -59,17 +66,7 @@ border-radius: 10px;
 
 
 }
-img{
-    max-width: 450px;
-    max-height: 450px;
-    border: 5px solid #040807;
-    border-radius: 10px;
-    background-repeat:no-repeat;
-    
-        
-        
 
-}
 .col-sm-12{
    
     font-family:Apple Garamond Bold ;
@@ -101,4 +98,28 @@ border-radius: 10px;
       
 
 }
+.img-fluid{
+    max-width: 450px;
+    max-height: 450px;
+    border: 5px solid #040807;
+    border-radius: 10px;
+    background-repeat:no-repeat;
+}
+.img-fluid2{
+    
+max-width: 450px;
+max-height: 450px;
+border: 5px solid #040807;
+border-radius: 10px;
+background-repeat:no-repeat;
+}
+.img-fluid3{
+    max-width: 450px;
+max-height: 450px;
+border: 5px solid #040807;
+border-radius: 10px;
+background-repeat:no-repeat;
+}
+
+
 
