@@ -1,81 +1,81 @@
 
 export function validate() {
-    // Define regular expressions for validation
+// Define la entrada de valores
 var nameRegex = /^[a-zA-Z ]{2,30}$/;
 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,20}$/;
 
-// Define error messages
-var nameError = 'Please enter a valid name.';
-var emailError = 'Please enter a valid email address.';
-var passwordError = 'Password must be 8-20 characters long and include at least one lowercase letter, one uppercase letter, and one number.';
+// Define mensaje de error
+let nameError = 'Ingresa un nombre valido.';
+let emailError = 'Introduce una direccion de correo valido.';
+let passwordError = 'La contraseña debe tener entre 8-20 caractes entre ellas debe haber al menos un numero y una letra mayuscula y minuscula .';
 
 
 var regnameValue = document.getElementById('regname').value;
 var regemailValue = document.getElementById('regemail').value;
 var regpassValue = document.getElementById('regpass').value;
 
-// Validate the full name field
+// Valida el nombre
 if (!nameRegex.test(regnameValue)) {
   alert(nameError);
   return false;
 }
 
-// Validate the email field
+// Valida correo
 if (!emailRegex.test(regemailValue)) {
   alert(emailError);
   return false;
 }
 
-// Validate the password field
+// Valida contraseña
 if (!passwordRegex.test(regpassValue)) {
   alert(passwordError);
+            
   return false;
 }
 
-// If all fields are valid, return true to indicate success
-// Get the values of the input elements
+
+// Traer valores
 var regnameValue = document.getElementById('regname').value;
 var regemailValue = document.getElementById('regemail').value;
 var regpassValue = document.getElementById('regpass').value;
 
-// Create a user object
-var user = {
+// Crear objeto
+let user = {
   name: regnameValue,
   email: regemailValue,
   password: regpassValue
 };
 console.log(user)
-// Convert the user object to a JSON string
-var userJson = JSON.stringify(user);
+//  JSON string
+const userJson = JSON.stringify(user);
 
-// Store the user object in local storage
+//  objecto en el local storage
 localStorage.setItem(user.email, userJson);
 
 
 }
 
 export function validateLogin () {
-    // Get the value of the "user" key in localStorage
+    // Traer el valor "user" key localStorage
 
-var userEmail = document.getElementById("logemail").value;
-var userPassword = document.getElementById("logpass").value;
-var userString = localStorage.getItem(userEmail);
+let userEmail = document.getElementById("logemail").value;
+let userPassword = document.getElementById("logpass").value;
+let userString = localStorage.getItem(userEmail);
 
-// Check if the user exists
+// Checar si el usuario es valido
 if (userString === null) {
-  // User doesn't exist - show an alert
+  // Usar una alerta si no coincide
   alert('User not found in localStorage');
 } else {
   // User exists - do something with the user data
   var user = JSON.parse(userString);
   if (user.password === userPassword) {
-    // Passwords match - do something
+    // Contraseña validada - hacer algo
     alert('Passwords match');
   } else {
-    // Passwords don't match - do something else
+    // Si la contraseña es invalida - hacer otra cosa
     alert('Passwords do not match');
   }
 }
-
 }
