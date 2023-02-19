@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Navbar.css';
 import iconoMenu from './iconoMenu.png';
 import iconoLucaNegro from './iconoLucaNegro.png';
@@ -12,26 +12,41 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar() {
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navbarRef.current && window.scrollY > navbarRef.current.offsetHeight) {
+        navbarRef.current.classList.add('faded');
+      } else {
+        navbarRef.current.classList.remove('faded');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);  
   return (
-    <nav className="navbar-bueno">
+    <nav ref={navbarRef} className="NavbarPrincipal">
       <button id="botonAbrirNavbar2">
-        <img src={iconoMenu}  id="iconoMenu" alt="icono del menú" />
+        <img src={iconoMenu} id="iconoMenu" alt="icono del menú" />
       </button>
       <div className="navbar-center">
-        <Link to="/"> <img src={iconoLucaNegro} id="iconoLucaNegro" alt="icono de Luca Santorini" /> </Link>
-        <h2>Luca Santorini</h2>
+        <Link to="/"><img src={iconoLucaNegro} id="iconoLucaNegro" alt="icono de Luca Santorini" /></Link>
+        <h2 id="h2navbar">Luca Santorini</h2>
       </div>
       <div className="navbar-section">
         <div className="navbar-busqueda">
           <img src={iconoBuscar} id="iconoBuscar" alt="icono de búsqueda" />
-          <input type="text" />
+          <input id="inputBusqueda" type="text" />
         </div>
         <Link to="/">
           <img src={IconoUsuario}id="IconoUsuario" alt="icono de usuario" />
           </Link>
         <Link to="/Carrito">
           <img src={iconoBolsaCompra} id="iconoBolsaCompra" alt="icono de bolsa de compras" />
-          </Link>
+        </Link>
       </div>
     </nav>
   );
@@ -41,45 +56,44 @@ function Navbar2() {
     const botonAbrirNavbar2 = document.getElementById("botonAbrirNavbar2");
     const imagenMenu = document.getElementById("iconoMenu");
     const botonCerrarNavbar2 = document.getElementById("botonCerrarNavbar2");
-    const navbar2 = document.getElementById("navbar2");
-    console.log("Esto es una prueba")
-  
-    botonAbrirNavbar2.addEventListener("click", function() { 
+    const navbar2 = document.getElementById("NavbarDesplegabeLateral");
+
+    botonAbrirNavbar2.addEventListener("click", function () {
       navbar2.style.display = "block";
-      if 
-      (navbar2.style.display = "block"){
-        imagenMenu.style.display = "none";
+      if
+        (navbar2.style.display = "block") {
+        imagenMenu.style.visibility = "hidden";
       }
     });
-    botonCerrarNavbar2.addEventListener("click", function() {
+    botonCerrarNavbar2.addEventListener("click", function () {
       navbar2.style.display = "none";
-      if (navbar2.style.display = "none"){
-        imagenMenu.style.display = "block";
+      if (navbar2.style.display = "none") {
+        imagenMenu.style.visibility = "visible";
       }
     });
   }, []);
   return (
-    <nav id="navbar2">
+    <nav id="NavbarDesplegabeLateral">
       <button id="botonCerrarNavbar2">
         <img src={iconoEliminar} id="iconoCerrar" alt="icono para cerrar el menú" />
       </button>
-      <div id="navar2-seccion1">
+      <div id="navbar2-seccion1">
         <ul>
           <li>
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/">Novedades</Link>
+            <Link to="/Novedades">Novedades</Link>
           </li>
           <li>
-            <Link to="/">Productos</Link>
+            <Link to="/Items">Productos</Link>
           </li>
           <li>
             <Link to="/Carrito">Mi bolsa</Link>
           </li>
         </ul>
       </div>
-      <div id="navar2-seccion2">
+      <div id="navbar2-seccion2">
         <ul>
           <li>
             <Link to="/">Acerca de Luca santorini</Link>

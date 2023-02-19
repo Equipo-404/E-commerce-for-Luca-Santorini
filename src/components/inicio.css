@@ -1,100 +1,28 @@
-#foto1 {
+#ImagenPaginaInicio {
     width: 100%;
     height: auto;
 }
-* {
-    box-sizing: border-box;
+.ImagenesSegundaSeccionInicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: auto;
 }
-
-@media only screen and (max-width: 6000px) {
-    .segundotexto {
-        font-family: applegaramound;
-        font-size: 300%;
-        margin: none;
-        display: block;
-        height: 5rem;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .segundotexto {
-        font-family: applegaramound;
-        font-size: 200%;
-        margin: 4%;
-        display: block;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .segundotexto {
-        font-family: applegaramound;
-        font-size: 120%;
-        margin: 4%;
-        display: block;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 200px) {
-    .segundotexto {
-        font-family: applegaramound;
-        font-size: 100%;
-        margin: 4%;
-        display: block;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-#columna1 {
-    float: left;
+#Imagen1NovedadesInicio {
+    margin-top: 4rem;
     height: 30rem;
     width: 26rem;
-    margin-top: 8rem;
-    margin-left: 7rem;
-    margin-right: 2rem;
-
 }
-
-#columna2 {
+#Imagen2NovedadesInicio {
     height: 30rem;
     width: 26rem;
-    float: left;
 }
-
-#columna3 {
-    float: left;
+#Imagen3NovedadesInicio {
+    margin-top: 4rem;
     height: 30rem;
     width: 26rem;
-    margin-top: 8rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
 }
-
-.fila::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/*img {
-     Para que sea responsiva 
-    width: 85%;
-}*/
-
-#verMas {
+#VerMasPaginaInicioPlayera{
     text-align: center;
     font-family: applegaramound;
     font-size: 30px;
@@ -114,23 +42,107 @@
     margin-right: auto;
     margin-bottom: 1rem;
 }
-#verMas:hover {
+#VerMasPaginaInicioPlayera:hover {
     color: #040807;
     transition: 0.5s;
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
 
 }
-#columna4 {
-    float: left;
-    height: 30rem;
-    width: 26rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+#VerMasPaginaInicio{
+    text-align: center;
+    font-family: applegaramound;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807;
+    width: 220px;
+    height: 50px;
+    padding: 2px 10px 10px 10px;
+    align-items: center;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
-h2 {
-    margin-left: .5rem;
-    margin-right: .5rem;
-    font-family: 'Coolvetica', sans-serif; 
+#VerMasPaginaInicio:hover {
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+
+}
+#h2Novedades{
+    text-align: center;
+    font-family: applegaramound;
     margin: 0;  
+    font-size: 4rem;
 }
+#ImagenInicioLucaSanto{
+    width: 100%;
+    height: auto;
+  }
+  #ImagenTerceraSeccionInicio{
+    height: 42rem;
+    width: auto;
+  }
+  #h2LucaSantoriniSeccion2{
+    text-align:left;
+    font-family: applegaramound;
+    font-size: 5rem;
+    margin-left: 5%;
+  }
+  #SeccionTresPaginaInicio {
+    display: flex;
+    align-items: center;
+  }
+
+  #ImagenTerceraSeccionInicio {
+    width: 44rem;
+    height: 36rem;
+    margin-right: 10px;
+  }
+
+  #DescripcionPlayera {
+    display: flex;
+    flex-direction: column;
+  }
+  #DescripcionPlayeraInicio{
+    font-size: 1rem;
+  }
+
+  #DescripcionPlayeraInicio{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    #SeccionTresPaginaInicio {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+    @media (max-width: 600px) {
+        #ImagenTerceraSeccionInicio {
+            height: 30rem;
+            width: 26rem;
+          }
+  }
+  @media (max-width: 1001px) {
+      #DescripcionPlayeraInicio{
+        display: none;
+      }
+}
+
+@media (max-width: 1266px) {
+    #Imagen1NovedadesInicio {
+        margin-top: 0;
+    }
+    #Imagen3NovedadesInicio {
+        margin-top: 0;
+    }
+  }
