@@ -30,10 +30,11 @@
     }
 }
 
+/*cambio para visualizar pantalla*/
 @media(min-width: 1090px) {
     .pantallacarga-body {
         background-image: url(https://res.cloudinary.com/dgp2sgznp/image/upload/v1675643872/Assets/espalda-javier-opacity_eh2bee.jpg);
-        background-size:auto;
+        background-size: 100%; 
         background-repeat: no-repeat;  
         
     }
