@@ -138,6 +138,7 @@
         #ImagenTerceraSeccionInicio {
             height: 30rem;
             width: 26rem;
+            width: 100%;
           }
   }
   @media (max-width: 1001px) {
@@ -149,8 +150,14 @@
 @media (max-width: 1266px) {
     #Imagen1NovedadesInicio {
         margin-top: 0;
+        width: 100%;
     }
+    #Imagen2NovedadesInicio {
+      margin-top: 0;
+      width: 100%;
+  }
     #Imagen3NovedadesInicio {
         margin-top: 0;
+        width: 100%;
     }
   }
