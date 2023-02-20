@@ -47,6 +47,10 @@ table {
     width: 80%;
 }
 
+table td {
+    padding-top: 1rem;
+}
+
 td button {
     display: flex;
     justify-content: center;
