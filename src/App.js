@@ -14,6 +14,7 @@ import Carrito from './components/carrito/Carrito'
 import PantallaCarga from './components/pantallacarga/PantallaCarga';
 import 'animate.css';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
   const cambiarEstado=()=>{
