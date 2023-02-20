@@ -191,9 +191,11 @@ body {
 @media(min-width: 370px) {
     .resume-items{
         width: 100%;
+    
     }
     .product-list{
         width: 100%;
+        
     }
     .shirt-picture{
         height: 150.5px !important;
@@ -203,9 +205,11 @@ body {
 @media(min-width: 780px) {
     .resume-items{
         width: 100%;
+       
     }
     .product-list{
         width: 100%;
+        
     }
     .shirt-picture{
         height: 200.5px !important;
@@ -221,6 +225,20 @@ body {
     }
     .shirt-picture{
         height: 220.5px !important;
+    }
+   
+}
+
+@media (max-width: 1080px) {
+    .resume-items{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+
+    .product-list{
+        border: none;
     }
    
 }
