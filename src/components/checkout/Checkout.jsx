@@ -1,10 +1,5 @@
 import './Checkout.css';
 import React, { Component } from 'react';
-import {
-    Table,
-    Button,
-    Container,
-  } from "reactstrap";
 
 export default class Checkout extends Component {
   render() {
@@ -15,7 +10,7 @@ export default class Checkout extends Component {
                     <div className="data-form">
                         <table classNameName="checkout-table">
                             <thead>
-                                <td colSpan={2}><h1>Checkout</h1></td>
+                                <td colSpan={2}><h1>Datos de envío</h1></td>
                             </thead>
                             <tr>
                                 <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
