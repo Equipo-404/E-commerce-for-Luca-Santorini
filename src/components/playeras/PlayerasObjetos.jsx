@@ -104,7 +104,7 @@ function Items() {
                         <CardSubtitle className="precioleo"><p>{item.name}</p>
                         <p className='descripcionleo'>{item.description}</p>
                         <select className='opcioneslibretas' value={item.selectedOption || ''} onChange={(e) => handleOptionChange(index, e.target.value)}>
-                            <option value={null}>size</option>
+                            <option value={null}>Tallas</option>
                             {item.options.map((option, optionIndex) => (
                                 <option key={optionIndex} value={option}>{option}</option>
                             ))}

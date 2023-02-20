@@ -23,6 +23,8 @@
     width: 26rem;
 }
 #VerMasPaginaInicioPlayera{
+    text-decoration: underline;
+    text-decoration-color: black;
     text-align: center;
     font-family: applegaramound;
     font-size: 30px;
@@ -43,6 +45,8 @@
     margin-bottom: 1rem;
 }
 #VerMasPaginaInicioPlayera:hover {
+  text-decoration: underline;
+  text-decoration-color: #eee8aa;
     color: #040807;
     transition: 0.5s;
     background: #eee8aa;
@@ -50,6 +54,8 @@
 
 }
 #VerMasPaginaInicio{
+  text-decoration: underline;
+  text-decoration-color: black;
     text-align: center;
     font-family: applegaramound;
     font-size: 30px;
@@ -70,6 +76,8 @@
     margin-bottom: 1rem;
 }
 #VerMasPaginaInicio:hover {
+  text-decoration: underline;
+  text-decoration-color: #eee8aa;
     color: #040807;
     transition: 0.5s;
     background: #eee8aa;
