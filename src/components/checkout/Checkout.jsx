@@ -1,4 +1,4 @@
-import './checkout.css';
+import './Checkout.css';
 import React, { Component } from 'react';
 import {
     Table,
@@ -41,7 +41,7 @@ export default class Checkout extends Component {
                         </table>
                     </div>
                     <div className="summary-form">
-                        <table className="resume-items">
+                        <table className="resume-products">
                             <tr>
                                 <th colspan="2" className="total-title">Total</th>
                             </tr>
@@ -69,7 +69,7 @@ export default class Checkout extends Component {
 
                             <tr>
                                 <td className="checkout" colspan="2" >
-                                    <button className="button-carrito">Checkout</button>
+                                    <button className="continue-button">Checkout</button>
                                 </td>
                             </tr>
                         </table>
