@@ -15,7 +15,7 @@ function Inicio() {
         <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158169/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_cfbnyh.png" id="Imagen3NovedadesInicio" />
       </div>
       <div>
-      <Link to="/Items"><button id="VerMasPaginaInicio">Ver mas novedades</button> </Link>
+      <Link to="/Novedades"><button id="VerMasPaginaInicio">Ver mas novedades</button> </Link>
       </div>
       <img src={imagenInicioLucaSanto} id="ImagenInicioLucaSanto" />
       <div>
@@ -28,7 +28,7 @@ function Inicio() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus atque nam architecto, modi quasi odit quisquam earum aliquid cum voluptate rerum saepe exercitationem. Fugit beatae alias quam itaque veritatis!
         In voluptatem quo vitae laborum dolor modi voluptatum eum, ad deleniti ullam similique sequi magnam nisi sint tempore velit voluptas officia beatae quaerat incidunt, quas itaque. Officia reprehenderit quae aspernatur!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut tempore dolorem quam ducimus fugiat alias nulla iste nihil assumenda! Veritatis quibusdam earum porro, voluptatem qui blanditiis non repellendus explicabo!</h3>
-        <Link to="/Novedades" ><button id="VerMasPaginaInicioPlayera">Ver mas playeras</button> </Link>
+        <Link to="/Items" ><button id="VerMasPaginaInicioPlayera">Ver mas playeras</button> </Link>
       </div>
       </div>
       </div>
