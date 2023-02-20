@@ -12,7 +12,6 @@ export default class Checkout extends Component {
         <> 
             <div className="parent-checkout">
                 <div className="container-form">
-                    {/* <div><h3>Resumen de compra</h3></div> */}
                     <div className="data-form">
                         <table classNameName="checkout-table">
                             <thead>
@@ -43,7 +42,7 @@ export default class Checkout extends Component {
                     <div className="summary-form">
                         <table className="resume-products">
                             <tr>
-                                <th colspan="2" className="total-title">Total</th>
+                                <th colspan="2" className="total-title">Resumen de compra</th>
                             </tr>
                             {/*item 1*/}
                             <tr>
