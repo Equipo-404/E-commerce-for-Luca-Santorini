@@ -1,6 +1,7 @@
 import React from 'react'
 import './Carrito.css';
 import 'animate.css';
+import { Link } from 'react-router-dom';
 
  const Carrito = () => {
   return (
@@ -84,7 +85,7 @@ import 'animate.css';
 
         <tr>
             <td className="checkout" colspan="2" >
-                <button className="button-carrito">Checkout</button>
+            <Link to="/Checkout"><button className="button-carrito">Checkout</button></Link>
             </td>
             
         </tr>

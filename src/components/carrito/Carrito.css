@@ -1,27 +1,5 @@
 
 
-/*.navbar {
-    background: #808080;
-    height: 3rem;
-    border-top: 2px solid #808080;
-    /*  poner nav bar arriba abajo
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}*/
-
-/*.footer {
-    background: #808080;
-    height: 3rem;
-    border-top: 2px solid #808080;
-    /*  poner footer abajo 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}*/
-
 body {
     background-color: #FFFFFF !important;
 }
@@ -36,9 +14,9 @@ body {
 }
 
 .product-list {
-    width: 60%;
+    width: 100%;
     display: inline-table;
-    margin: 15px;
+    margin: 0px 0px 15px 0px;
     align-items: center;
     border-right: 2px #808080 solid;
 
@@ -107,12 +85,14 @@ body {
 }
 
 .resume-items {
-    width: 35%;
+    width: 100%;
     display: inline-table;
     align-items: center;
     margin: 10px;
     border-spacing: 0 !important;
     border-collapse: collapse !important;
+    padding: 50px 10px 50px 10px;
+   
 }
 
 .total-title {
@@ -120,6 +100,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     padding: 50px 10px 50px 10px;
+    
 }
 
 .product-resume {
@@ -127,7 +108,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     width: 65%;
-    padding: 6px 0px 7px 2px;
+    padding: 6px 2px 7px 10px;
     border-spacing: 0px;
    
 }
@@ -154,9 +135,9 @@ body {
     font-size: 20px;
     font-weight: 400;
     text-align: left;
-    padding: 40px 0px 2px 2px;
+    padding: 40px 0px 2px 20px;
     border-top: 2px solid #808080;
-    border-spacing: 0px;
+    border-spacing: 20px;
     
 }
 
@@ -189,6 +170,9 @@ body {
     align-items: center;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 10px;
+    text-decoration: underline;
+    text-decoration-color: black;
+  
 }
 
 .button-carrito:hover {
@@ -197,15 +181,21 @@ body {
     transition: 0.5s;
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
+    text-decoration: underline;
+  text-decoration-color: #eee8aa;
+
+    
     
 }
 
 @media(min-width: 370px) {
     .resume-items{
         width: 100%;
+    
     }
     .product-list{
         width: 100%;
+        
     }
     .shirt-picture{
         height: 150.5px !important;
@@ -214,10 +204,12 @@ body {
 
 @media(min-width: 780px) {
     .resume-items{
-        width: 40%;
+        width: 100%;
+       
     }
     .product-list{
-        width: 50%;
+        width: 100%;
+        
     }
     .shirt-picture{
         height: 200.5px !important;
@@ -226,13 +218,27 @@ body {
 
 @media(min-width: 1090px) {
     .resume-items{
-        width: 33%;
+        width: 38%;
     }
     .product-list{
         width: 60%;
     }
     .shirt-picture{
         height: 220.5px !important;
+    }
+   
+}
+
+@media (max-width: 1080px) {
+    .resume-items{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+
+    .product-list{
+        border: none;
     }
    
 }
