@@ -96,7 +96,7 @@ function Navbar2() {
       <div id="navbar2-seccion2">
         <ul>
           <li>
-            <Link to="/">Acerca de Luca santorini</Link>
+            <Link to="/AboutLuc">Acerca de Luca santorini</Link>
           </li>
           <li>
             <Link to="/About404">Acerca de equipo 404</Link>
