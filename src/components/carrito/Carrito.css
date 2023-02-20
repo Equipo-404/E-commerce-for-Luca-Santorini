@@ -189,6 +189,9 @@ body {
     align-items: center;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 10px;
+    text-decoration: underline;
+    text-decoration-color: black;
+  
 }
 
 .button-carrito:hover {
@@ -197,6 +200,10 @@ body {
     transition: 0.5s;
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
+    text-decoration: underline;
+  text-decoration-color: #eee8aa;
+
+    
     
 }
 
