@@ -89,7 +89,7 @@ const About404 = () => {
   ];
 
   return (
-    <Container fluid="fluid">
+    <Container className="margin-top" fluid="fluid">
 
       <Row lg="2" sm="1">
 
