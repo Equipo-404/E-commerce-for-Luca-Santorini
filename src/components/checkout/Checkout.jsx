@@ -63,7 +63,7 @@ export default class Checkout extends Component {
 
                             <tr>
                                 <td className="checkout" colspan="2" >
-                                    <button className="continue-button">Checkout</button>
+                                    <button className="continue-button">Terminar pedido</button>
                                 </td>
                             </tr>
                         </table>
