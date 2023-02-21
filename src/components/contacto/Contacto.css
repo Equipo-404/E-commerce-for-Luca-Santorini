@@ -88,6 +88,13 @@ h1{
     justify-items: center;
 }
 
+.contacto-button:hover{
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+}
+
 .image-form {
     float:left;
     display: flex;
