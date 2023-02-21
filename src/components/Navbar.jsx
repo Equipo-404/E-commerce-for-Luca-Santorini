@@ -86,7 +86,7 @@ function Navbar2() {
             <Link to="/Novedades">Novedades</Link>
           </li>
           <li>
-            <Link to="/Items">Productos</Link>
+            <Link to="/Items">Playeras</Link>
           </li>
           <li>
             <Link to="/Carrito">Mi bolsa</Link>
@@ -96,13 +96,13 @@ function Navbar2() {
       <div id="navbar2-seccion2">
         <ul>
           <li>
-            <Link to="/">Acerca de Luca santorini</Link>
+            <Link to="/AboutLuc">Acerca de Luca santorini</Link>
           </li>
           <li>
             <Link to="/About404">Acerca de equipo 404</Link>
           </li>
           <li>
-            <Link to="/">Contacto</Link>
+            <Link to="/Contacto">Contacto</Link>
           </li>
         </ul>
       </div>
