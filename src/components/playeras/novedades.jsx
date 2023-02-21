@@ -10,15 +10,15 @@ function Novedades() {
         {
             name: '$199MXN',
             img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676693597/LIBRETA_I_AM_AN_ARTIST_NOT_A_DOCTOR_BLANCA_yrljlh.png',
-            description: 'Libreta 200 hojas, ralla, doble ralla, cuadricula (chica o grande) o dibujo',
-            options: ['Ralla', 'Doble ralla', 'Cuadricula chica', 'Cuadricula grande', 'Dibujo '],
+            description: 'Libreta 200 hojas, raya, doble raya, cuadrícula (chica o grande) o dibujo',
+            options: ['Raya', 'Doble raya', 'Cuadrícula chica', 'Cuadrícula grande', 'Dibujo'],
             selectedOption: null
         },
         {
             name: '$199MXN',
             img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158114/LIBRETA_NOT_A_DOCTOR_BLANCA_jsbn0a.png',
-            description: 'Libreta 200 hojas, ralla, doble ralla, cuadricula (chica o grande) o dibujo ',
-            options: ['Ralla', 'Doble ralla', 'Cuadricula chica', 'Cuadricula grande', 'Dibujo '],
+            description: 'Libreta 200 hojas, raya, doble raya, cuadrícula (chica o grande) o dibujo',
+            options: ['Raya', 'Doble raya', 'Cuadrícula chica', 'Cuadrícula grande', 'Dibujo'],
             selectedOption: null
         }
     ]);
