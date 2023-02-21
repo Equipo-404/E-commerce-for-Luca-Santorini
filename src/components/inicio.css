@@ -84,6 +84,18 @@
     box-shadow: 2px 3px 4px 2px #808080;
 
 }
+@media (max-width: 301px) {
+  #VerMasPaginaInicioPlayera{
+  width: auto;
+}
+
+#VerMasPaginaInicio{
+  width: auto;
+}
+#h2LucaSantoriniSeccion2{
+  display: none;
+}
+}
 #h2Novedades{
     text-align: center;
     font-family: applegaramound;
@@ -91,6 +103,7 @@
     font-size: 4rem;
 }
 #ImagenInicioLucaSanto{
+  font-size: auto;
     width: 100%;
     height: auto;
   }
@@ -139,6 +152,7 @@
             height: 30rem;
             width: 26rem;
             width: 100%;
+            margin-right: 0%;
           }
   }
   @media (max-width: 1001px) {

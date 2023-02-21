@@ -18,9 +18,7 @@ function Inicio() {
       <Link to="/Novedades"><button id="VerMasPaginaInicio">Ver más novedades</button> </Link>
       </div>
       <img src={imagenInicioLucaSanto} id="ImagenInicioLucaSanto" />
-      <div>
       <h2 id="h2LucaSantoriniSeccion2">Luca Santorini</h2>
-      </div>
       <div id="SeccionTresPaginaInicio">
       <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158169/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_cfbnyh.png" id="ImagenTerceraSeccionInicio" />
       <div id="DescripcionPlayera">
