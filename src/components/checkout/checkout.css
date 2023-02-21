@@ -43,6 +43,13 @@
     border-radius: 5px;
 }
 
+.continue-button:hover {
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+}
+
 table {
     width: 80%;
 }
