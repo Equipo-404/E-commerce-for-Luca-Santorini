@@ -1,4 +1,4 @@
-import './Checkout.css';
+import './checkout.css';
 import React, { Component } from 'react';
 
 export default class Checkout extends Component {
