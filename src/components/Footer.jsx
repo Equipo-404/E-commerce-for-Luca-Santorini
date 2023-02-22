@@ -11,7 +11,7 @@ function Footer() {
  <footer id="footer">
       <div id="footer-section1">
         <ul>
-          <li><a href="#">Acerca de Luca santorini</a></li>
+          <li><Link to="/AboutLuc">Acerca de Luca santorini</Link></li>
           <li><Link to="/About404">Acerca de equipo 404</Link></li>
         </ul>
       </div>
@@ -22,7 +22,7 @@ function Footer() {
       </div>
       <div id="footer-section3">
       <div className="arriba">
-      <span id="TextoContactoFooter">Contacto</span>
+      <span> <Link to="/Contacto" id="TextoContactoFooter" > Contacto </Link> </span>
       </div>
       <div className="abajo">
           <a href="https://www.instagram.com/_lucassantor/?hl=es-la" target="_blank">

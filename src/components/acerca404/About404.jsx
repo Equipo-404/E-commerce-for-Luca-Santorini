@@ -26,7 +26,7 @@ const About404 = () => {
     { //Alberto Frausto
       name: "Alberto Frausto",
       title: "Scrum Master / Equipo de Desarrollo",
-      description: "John Doe is a highly skilled software engineer with over 10 years of experience in the industry. He is well-versed in various programming languages and has a proven track record of delivering high-quality software projects on time and within budget.",
+      description: "Soy Alberto Frausto, ingeniero en sistemas de Jalisco con experiencia en tecnologías Java y Springboot, react, Javascript, HTML, CSS y MySQL. Formé parte del equipo de desarrollo de TEAM 404 en este proyecto en el que enfrenté diversos desafíos técnicos, pero logramos superarlos con éxito gracias a mi experiencia previa y capacidad de trabajo en equipo.",
       photo: "https://res.cloudinary.com/dtgebd1r6/image/upload/v1676454189/404/img/alberto_kdcvft.jpg",
       photoFull: "https://res.cloudinary.com/dtgebd1r6/image/upload/v1676454190/404/img/photo-full/alberto-full_my9pcu.jpg",
       link: "https://www.linkedin.com/in/alberto-frausto/",
@@ -64,7 +64,7 @@ const About404 = () => {
       title: "Equipo de Desarrollo",
       description: "Mi nombre es Marcos Abel Mar Baza y acabo de graduarme como ingeniero en Tecnologías de Software y estoy en proceso de titulación. Mi objetivo es desarrollarme en el área de las tecnologías de la información como programador Java Full Stack. Me considero una persona honesta, respetuosa y optimista con ganas de superación tanto personal como laboral.",
       photo: "https://res.cloudinary.com/dtgebd1r6/image/upload/v1676454191/404/img/marcos_ie5ohj.png",
-      photoFull: "https://res.cloudinary.com/dtgebd1r6/image/upload/v1676454190/404/img/photo-full/marcos-full_oo9xod.png",
+      photoFull: "https://res.cloudinary.com/dtgebd1r6/image/upload/v1676851092/404/img/photo-full/WhatsApp_Image_2023-02-19_at_17.57.53_j4dauz.jpg",
       link: "https://www.linkedin.com/in/marcos-abel-mar-baza-a2872321a/",
       buttonName: "LinkedIn"
     },
@@ -89,7 +89,7 @@ const About404 = () => {
   ];
 
   return (
-    <Container fluid="fluid">
+    <Container className="margin-top" fluid="fluid">
 
       <Row lg="2" sm="1">
 
@@ -122,11 +122,6 @@ const About404 = () => {
         ))}
 
       </div>
-
-      <div className="footer">
-        <img className="person-photo" src="https://res.cloudinary.com/dtgebd1r6/image/upload/v1676484856/404/img/logo-luca_ogeves.png" alt="Logo Luca Santorini" />
-      </div>
-
     </Container>
   );
 };

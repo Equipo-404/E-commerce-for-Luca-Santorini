@@ -1,0 +1,163 @@
+@font-face {
+    font-family: coolvetica;
+    src: url("../../assets/fonts/coolvetica-rg.otf");
+  }
+@font-face {
+    font-family: applegaramound;
+    src: url("../../assets/fonts/AppleGaramond-Bold.ttf");
+  }
+  @font-face {
+    font-family: applegaramoundbase;
+    src: url("../../assets/fonts/AppleGaramond-Bold.ttf");
+  }
+
+h1{
+    font-family: 'Coolvetica', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.parent-contact{
+    display: grid;
+    place-items: center;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+
+.container-contact {
+    display: flex;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 50rem;
+    height: 40rem;
+    border: 1px solid #000;
+    box-shadow: 3px 4px 5px 3px #ababab;
+}
+
+.info-form {
+    font-size: 20px;
+    background-color: #D9D9D9;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.container-contactoButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.info-form label{
+    align-items: left;
+    font-family: applegaramoundbase;
+}
+
+.info-form input{
+    width: 100%;
+    align-items: left;
+    background: #FFF;
+    border-radius: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.info-form textarea{
+    width: 100%;
+    align-items: left;
+    resize: none;
+    height: 5rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.info-form button{
+    font-family: 'Apple Garamond', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #040807;
+    border: 1px solid #040807 ;
+    width: 150px;
+    height: 35px;
+    padding: 2px 10px 10px 10px;
+    box-shadow: 2px 3px 4px 2px #ababab;
+    border-radius: 5px;
+    justify-items: center;
+}
+
+.contacto-button:hover{
+    color: #040807;
+    transition: 0.5s;
+    background: #eee8aa;
+    box-shadow: 2px 3px 4px 2px #808080;
+}
+
+.image-form {
+    float:left;
+    display: flex;
+    place-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.image-form img {
+    background-size: cover;
+    height: 100%; 
+    width: 100%;
+}
+
+input, textarea {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: 0;
+    outline: 0;
+}
+
+@media(max-width: 1200px) {
+    .parent-contact{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .container-contact{
+        width: 66%;
+    }
+    .info-form{
+        width: 66%;
+    }
+    .image-form{
+        width: 0%;
+    }
+}
+
+@media(max-width: 780px) {
+    .parent-contact{
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+    }
+    .container-contact{
+        width: 0%;
+        border: none;
+        padding: none;
+    }
+    .info-form{
+        width: 0%;
+    }
+    .image-form{
+        width: 0%;
+    }
+}
+
+@media(max-width: 414px) {
+    .container-contact{
+        width: 0%;
+        border: none;
+    }
+    .info-form{
+        width: 0%;
+    }
+}

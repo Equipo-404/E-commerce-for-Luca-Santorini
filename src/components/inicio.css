@@ -23,6 +23,8 @@
     width: 26rem;
 }
 #VerMasPaginaInicioPlayera{
+    text-decoration: underline;
+    text-decoration-color: black;
     text-align: center;
     font-family: applegaramound;
     font-size: 30px;
@@ -43,6 +45,8 @@
     margin-bottom: 1rem;
 }
 #VerMasPaginaInicioPlayera:hover {
+  text-decoration: underline;
+  text-decoration-color: #eee8aa;
     color: #040807;
     transition: 0.5s;
     background: #eee8aa;
@@ -50,6 +54,8 @@
 
 }
 #VerMasPaginaInicio{
+  text-decoration: underline;
+  text-decoration-color: black;
     text-align: center;
     font-family: applegaramound;
     font-size: 30px;
@@ -70,11 +76,25 @@
     margin-bottom: 1rem;
 }
 #VerMasPaginaInicio:hover {
+  text-decoration: underline;
+  text-decoration-color: #eee8aa;
     color: #040807;
     transition: 0.5s;
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
 
+}
+@media (max-width: 301px) {
+  #VerMasPaginaInicioPlayera{
+  width: auto;
+}
+
+#VerMasPaginaInicio{
+  width: auto;
+}
+#h2LucaSantoriniSeccion2{
+  display: none;
+}
 }
 #h2Novedades{
     text-align: center;
@@ -83,6 +103,7 @@
     font-size: 4rem;
 }
 #ImagenInicioLucaSanto{
+  font-size: auto;
     width: 100%;
     height: auto;
   }
@@ -130,6 +151,8 @@
         #ImagenTerceraSeccionInicio {
             height: 30rem;
             width: 26rem;
+            width: 100%;
+            margin-right: 0%;
           }
   }
   @media (max-width: 1001px) {
@@ -141,8 +164,14 @@
 @media (max-width: 1266px) {
     #Imagen1NovedadesInicio {
         margin-top: 0;
+        width: 100%;
     }
+    #Imagen2NovedadesInicio {
+      margin-top: 0;
+      width: 100%;
+  }
     #Imagen3NovedadesInicio {
         margin-top: 0;
+        width: 100%;
     }
   }

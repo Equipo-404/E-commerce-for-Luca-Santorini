@@ -26,7 +26,7 @@ export default class LogIn extends Component {
                                        
                                                     
                                                     <h1 className="titulitu">Iniciar Sesíon</h1>
-                                             <br></br>  <div className="forms-group" >
+                                               <div className="forms-group" >
                                                         <input type="email" name="email" className="forms-control" placeholder="Correo electronico" id="logemail" required></input>
                                                         <i className="input-icon uil uil-at"></i>
                                                         <p className="warning" id=""></p>
@@ -39,7 +39,7 @@ export default class LogIn extends Component {
                                                     </div>
                                                     <br></br>
                                                     <div>
-                                                    <button onClick={validateLogin} class="loga" type="submit">Iniciar Sesíon</button>
+                                                    <button onClick={validateLogin} className="loga" type="submit">Iniciar Sesíon</button>
                                                     </div>
                                                     <br></br>
                                                     <div>
@@ -54,20 +54,20 @@ export default class LogIn extends Component {
                                         <div className="center-wrap">
                                             <div className="section text-center">
                                                 <h1 className="titulitu">Regístrate</h1>
-                                    <br></br>            <div className="forms-group">
+                                                <div className="forms-group">
                                                     <input type="text" name="logname" className="forms-control" placeholder="Nombre Completo" id="regname" autocomplete="off" required></input>
                                                     <i className="input-icon uil uil-user"></i>
                                                     
                                                 </div>	
-                <br></br>                                <div className="forms-group">
+                <br></br>                       <div className="forms-group">
                                                     <input type="email" name="logemail" className="forms-control" placeholder="Correo electronico" id="regemail" autocomplete="off" required=""></input>
                                                     <i className="input-icon uil uil-at"></i>
                                                 </div>	
-                  <br></br>                              <div className="forms-group">
+                  <br></br>                     <div className="forms-group">
                                                     <input type="password" name="logpass" className="forms-control" placeholder="Contraseña" id="regpass" autocomplete="off" required></input>
                                                     <i className="input-icon uil uil-lock-alt"></i>
                                                 </div>
-                  <br></br>                             <button onClick={validate} id="register_button" className="loga">Regístrarme</button>
+                  <br></br>                     <button onClick={validate} id="register_button" className="loga" type="submit">Regístrarme</button>
 
                                             </div>
                                             

@@ -32,11 +32,17 @@
  @media (max-width: 525px) {
     .segundotextoleo{
         font-family: applegaramound;
-        font-size: 500%;
+        font-size: 400%;
         margin: 13%;
     }
   }
-
+  @media (max-width: 300px) {
+    .segundotextoleo{
+        font-family: applegaramound;
+        font-size: 300%;
+        margin: 13%;
+    }
+  }
   
   
   #imgleo {
@@ -49,7 +55,6 @@
     text-align: center;
     font-family:'applegaramound';
     font-size: 20px;
-    font-weight: 700;
     color: #FFFFFF;
     background: #040807;
     border: 1px solid #040807 ;
@@ -66,7 +71,7 @@
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
 }
-.titulo , .botonleo , .precioleo {
+.botonleo , .precioleo {
     display: flex;
     text-align: center;
     font-size: 150%;
@@ -74,8 +79,8 @@
     margin: 0px auto;
     font-family: applegaramoundbase;
 }
-.titulo , .botonleo , .precioleo{
-   position: relative;
+ .botonleo , .precioleo{
+  margin-bottom: 2%;   
    top: -30px;
 }
 .imagenesplayerasleo{
