@@ -11,19 +11,20 @@ export default class Contacto extends Component {
                 <img src="https://res.cloudinary.com/ds3wzgtfa/image/upload/v1676444869/ChildhoodManifest-Contact-BG_tn2xpl.jpg" alt="" />
             </div>
             <div className="info-form">
-              <form id='formulario'>
+              <form id='formulario' action="https://formsubmit.co/paveloswaldo.gallegos@gmail.com" method="POST">
                   <h1>Contáctanos</h1>
                   <label for="name">Nombre:</label><br />
                   <input type="text" id="user_name" name="user_name" required/><br />
                   
                   <label for="mail">Correo electrónico:</label><br />
-                  <input type="email" id="user_mail" name="user_mail" required/><br />
+                  <input type="email" id="user_mail" name="email" required/><br />
                   
                   <label for="phone">Número de teléfono:</label><br />
-                  <input type="number" id="user_phone" name="user_phone" max="9999999999"/><br />
+                  <input type="tel" id="user_phone" name="user_phone" pattern="[0-9]+" required/><br />
                   
                   <label for="msg">Mensaje:</label><br />
                   <textarea id="msg" name="user_message" required></textarea><br />
+
                   <div className='container-contactoButton'>
                     <button type="submit" className="contacto-button" id="enviarContacto" >Enviar</button>
                   </div>

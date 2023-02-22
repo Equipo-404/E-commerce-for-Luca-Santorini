@@ -33,6 +33,7 @@ h1{
     width: 50rem;
     height: 40rem;
     border: 1px solid #000;
+    box-shadow: 3px 4px 5px 3px #ababab;
 }
 
 .info-form {
@@ -62,6 +63,7 @@ h1{
     width: 100%;
     align-items: left;
     background: #FFF;
+    border-radius: 5px;
     border-bottom: 1px solid #000;
 }
 
