@@ -20,21 +20,21 @@ export default class LogIn extends Component {
                             <label for="reg-log"></label>
                             <div className="card-3d-wrap mx-auto">
                                 <div className="card-3d-wrapper">
-                                    <div class="card-front">
-                                        <div class="center-wrap">
-                                            <div class="section text-center">
+                                    <div className="card-front">
+                                        <div className="center-wrap">
+                                            <div className="section text-center">
                                        
                                                     
-                                                    <h1 class="titulitu">Iniciar Sesíon</h1>
-                                             <br></br>       <div class="forms-group" >
+                                                    <h1 className="titulitu">Iniciar Sesíon</h1>
+                                             <br></br>  <div className="forms-group" >
                                                         <input type="email" name="email" className="forms-control" placeholder="Correo electronico" id="logemail" required></input>
-                                                        <i class="input-icon uil uil-at"></i>
+                                                        <i className="input-icon uil uil-at"></i>
                                                         <p className="warning" id=""></p>
                                                     </div>	
                                                     <br></br>
                                                     <div class="forms-group">
-                                                        <input type="password" name="logmail" class="forms-control" placeholder="Contraseña" id="logpass" required></input>
-                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                        <input type="password" name="logmail" className="forms-control" placeholder="Contraseña" id="logpass" required></input>
+                                                        <i className="input-icon uil uil-lock-alt"></i>
                                                         <p className="warning" id="passwordErr"></p>
                                                     </div>
                                                     <br></br>
@@ -44,30 +44,30 @@ export default class LogIn extends Component {
                                                     <br></br>
                                                     <div>
 
-                                                    <a class="parra" href="">¿Olvidaste tu contraseña?</a>
+                                                    <a className="parra" href="">¿Olvidaste tu contraseña?</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     
-                                    <div class="card-back">
-                                        <div class="center-wrap">
-                                            <div class="section text-center">
-                                                <h1 class="titulitu">Regístrate</h1>
-                                    <br></br>            <div class="forms-group">
-                                                    <input type="text" name="logname" class="forms-control" placeholder="Nombre Completo" id="regname" autocomplete="off" required></input>
-                                                    <i class="input-icon uil uil-user"></i>
+                                    <div className="card-back">
+                                        <div className="center-wrap">
+                                            <div className="section text-center">
+                                                <h1 className="titulitu">Regístrate</h1>
+                                    <br></br>            <div className="forms-group">
+                                                    <input type="text" name="logname" className="forms-control" placeholder="Nombre Completo" id="regname" autocomplete="off" required></input>
+                                                    <i className="input-icon uil uil-user"></i>
                                                     
                                                 </div>	
-                <br></br>                                <div class="forms-group">
-                                                    <input type="email" name="logemail" class="forms-control" placeholder="Correo electronico" id="regemail" autocomplete="off" required=""></input>
-                                                    <i class="input-icon uil uil-at"></i>
+                <br></br>                                <div className="forms-group">
+                                                    <input type="email" name="logemail" className="forms-control" placeholder="Correo electronico" id="regemail" autocomplete="off" required=""></input>
+                                                    <i className="input-icon uil uil-at"></i>
                                                 </div>	
-                  <br></br>                              <div class="forms-group">
-                                                    <input type="password" name="logpass" class="forms-control" placeholder="Contraseña" id="regpass" autocomplete="off" required></input>
-                                                    <i class="input-icon uil uil-lock-alt"></i>
+                  <br></br>                              <div className="forms-group">
+                                                    <input type="password" name="logpass" className="forms-control" placeholder="Contraseña" id="regpass" autocomplete="off" required></input>
+                                                    <i className="input-icon uil uil-lock-alt"></i>
                                                 </div>
-                  <br></br>                             <button onClick={validate} id="register_button" class="loga">Regístrarme</button>
+                  <br></br>                             <button onClick={validate} id="register_button" className="loga">Regístrarme</button>
 
                                             </div>
                                             
