@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-
+/* Estilo de mi encabezado Acerca de */
 .myh1{
     text-align: center;
     background-color: #040807;
@@ -24,7 +24,7 @@
    
   
   
-
+/*Posicionamiento de mi background image */
 
 .body-style {
     background-image: url(https://res.cloudinary.com/dbyl6ppep/image/upload/v1676132813/fotos/last_bernacholo-19_j2unz6.png);
@@ -36,7 +36,7 @@
       
      
 
-
+/* En .wrapper's y en col's estilo,tamaño y fondo de los textos y pisicionamiento de las img */
 
 
  .wrapper{
@@ -50,24 +50,11 @@
     
 
 }
-.text-box{
-    position: absolute;
-    margin: 5px;
-    margin-top: 5px;
-    margin-left: 100px;
-    padding: 0;
-    padding-left: 1;
-    font-family:Apple Garamond Bold ;
-    text-align: center;
-    background-color: #040807;
-    box-sizing: border-box;
-    text-align:center;
-color:#ffffff;
-border-radius: 10px;
 
 
 
-}
+
+  
 
 .col-sm-12{
    
@@ -100,10 +87,9 @@ border-radius: 10px;
     text-align:right;
       
 
-}
-.img-fluid,
-.img-fluid2,
-.img-fluid3 {
+}   /*Diseño y tamaño del borde en las imagenes */
+.img-fluid
+ {
     
     max-width: 450px;
     max-height: 450px;
@@ -112,14 +98,14 @@ border-radius: 10px;
     
   }
 
-  /* Medium screens */
+  /* /* Diseño de las imagenes en pantallas medianas */
 @media screen and (min-width: 768px) {
     .img-fluid {
       width: 50%;
     }
   }
   
-  /* Small screens */
+  /* Diseño de las imagenes en pantallas chicas */
   @media screen and (max-width: 480px) {
     .img-fluid {
       width: 100%;
@@ -127,14 +113,7 @@ border-radius: 10px;
       
     }
   }
-  @media screen and (max-width: 480px) {
-    .col-md-6 {
-      width: 100%;
-      
-      
-      
-    }
-  }
+  
   
  
   
