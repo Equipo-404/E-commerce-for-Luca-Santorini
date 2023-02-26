@@ -143,6 +143,7 @@ input, textarea {
         width: 0%;
         border: none;
         padding: none;
+        box-shadow: none;
     }
     .info-form{
         width: 0%;
@@ -156,6 +157,7 @@ input, textarea {
     .container-contact{
         width: 0%;
         border: none;
+        box-shadow: none;
     }
     .info-form{
         width: 0%;
