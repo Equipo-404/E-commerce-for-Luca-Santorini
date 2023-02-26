@@ -19,7 +19,7 @@ export default class AboutLuc extends Component {
           
          
             <div className="col-sm-12 col-md-6 col-lg-4">
-              <h3>Mas que un icono, homie</h3>
+              <h3>Más que un Ícono, homie</h3>
               <p>
                 No es un identificador de marca, no nos convence del todo
                 <br />
@@ -27,10 +27,10 @@ export default class AboutLuc extends Component {
                 <br />
                 la libertad creativa, plantearse en la cabeza que sin
                 <br />
-                importar el cliente o la situacion, esto simboliza el corazón
+                importar el cliente o la situación, esto simboliza el corazón.
               </p>
             </div>
-          
+           
         </figure>
       </div>
       <div className="wrapper">
