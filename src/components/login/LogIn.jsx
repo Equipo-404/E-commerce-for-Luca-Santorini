@@ -27,7 +27,7 @@ export default class LogIn extends Component {
                                                     
                                                     <h1 className="titulitu">Iniciar Sesíon</h1>
                                                <div className="forms-group" >
-                                                        <input type="email" name="email" className="forms-control" placeholder="Correo electronico" id="logemail" ></input>
+                                                        <input type="email" name="email" className="forms-control" placeholder="Correo electrónico" id="logemail" ></input>
                                                     
                                                         <p className="warning" id=""></p>
                                                     </div>	
@@ -62,7 +62,7 @@ export default class LogIn extends Component {
                                                     <p className ="formulario-input-error">El nombre deben ser unicamente de 2 a 40 letras</p>
                 <br></br>                       <div className="forms-group" id="email-group">
                                                     
-                                                    <input type="email" name="logemail" className="forms-control" placeholder="Correo electronico" id="regemail" autoComplete='off' ></input>
+                                                    <input type="email" name="logemail" className="forms-control" placeholder="Correo electrónico" id="regemail" autoComplete='off' ></input>
                                                     <i className="input-icon uil uil-at"></i>
 
                                                 </div>	

@@ -267,7 +267,7 @@ font-family:themillions;
 }
 
 
-.forms-group:-ms-input-placeholder  {
+.forms-group:-ms-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
