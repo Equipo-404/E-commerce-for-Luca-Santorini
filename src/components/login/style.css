@@ -162,7 +162,7 @@ backface-visibility: hidden;
   display: block;
 }
 
-.forms-control {
+.formulario__input {
 margin-left: 15px;
 padding: 20px;
 padding-left: px;
@@ -182,8 +182,8 @@ transition: all 200ms linear;
 box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
 font-family:themillions;
 }
-.forms-control:focus,
-.forms-control:active {
+.formulario__input:focus,
+.formulario__input:active {
   border: 4px solid #246d97;
   outline: none;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
@@ -209,7 +209,7 @@ font-family:themillions;
 }
 
 
-.forms-control-validacion {
+.formulario__input-validacion {
   border: 4px solid rgb(169, 5, 5);
   outline: none;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
@@ -234,13 +234,13 @@ font-family:themillions;
   
 }
 
-.formulario-input-error {
+.formulario__input-error {
   font-size: 14px;
   margin-bottom: 0;
   color:rgb(169, 5, 5);
   display: none;
 }
-.formulario-input-error-activo {
+.formulario__input-error-activo {
   display: block;
 }
 
@@ -267,46 +267,46 @@ font-family:themillions;
 }
 
 
-.forms-group:-ms-placeholder  {
+.formulario__grupo:-ms-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group::-moz-placeholder  {
+.formulario__grupo::-moz-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:-moz-placeholder  {
+.formulario__grupo:-moz-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group::-webkit-placeholder  {
+.formulario__grupo::-webkit-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus:-ms-placeholder  {
+.formulario__grupo:focus:-ms-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus::-moz-placeholder  {
+.formulario__grupo:focus::-moz-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus:-moz-placeholder  {
+.formulario__grupo:focus:-moz-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus::-webkit-input-placeholder  {
+.formulario__grupo:focus::-webkit-input-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;

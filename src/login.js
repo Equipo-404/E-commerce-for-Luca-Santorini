@@ -1,37 +1,87 @@
 export function validate() {
-  // Define la entrada de valores
-  var nameRegex = /^[a-zA-Z ]{2,30}$/;
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,20}$/;
+  const formulario = document.getElementById('formulario');
+  const inputs = document.querySelectorAll('#formulario input');
   
-  // Define mensaje de error
-  let nameError = 'Ingresa un nombre valido.';
-  let emailError = 'Introduce una direccion de correo valido.';
-  let passwordError = 'La contraseña debe tener entre 8-20 caractes entre ellas debe haber al menos un numero y una letra mayuscula y minuscula .';
-  
-  
-  var regnameValue = document.getElementById('regname').value;
-  var regemailValue = document.getElementById('regemail').value;
-  var regpassValue = document.getElementById('regpass').value;
-  
-  // Valida el nombre
-  if (!nameRegex.test(regnameValue)) {
-    alert(nameError);
-    return false;
+  const expresiones = {
+    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    password: /^.{4,12}$/, // 4 a 12 digitos.
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    
   }
   
-  // Valida correo
-  if (!emailRegex.test(regemailValue)) {
-    alert(emailError);
-    return false;
+  const campos = {
+    usuario: false,
+    nombre: false,
+    password: false,
+    correo: false
+    
   }
   
-  // Valida contraseña
-  if (!passwordRegex.test(regpassValue)) {
-    alert(passwordError);
-              
-    return false;
+  const validarFormulario = (e) => {
+    switch (e.target.name) {
+      case "usuario":
+        validarCampo(expresiones.usuario, e.target, 'usuario');
+      break;
+      case "nombre":
+        validarCampo(expresiones.nombre, e.target, 'nombre');
+      break;
+      case "password":
+        validarCampo(expresiones.password, e.target, 'password');
+        
+      break;
+      
+      case "correo":
+        validarCampo(expresiones.correo, e.target, 'correo');
+      break;
+     
+    }
   }
+  
+  const validarCampo = (expresion, input, campo) => {
+    if(expresion.test(input.value)){
+      document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
+      document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
+      document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
+      document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
+      document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+      campos[campo] = true;
+    } else {
+      document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
+      document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
+      document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
+      document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
+      document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+      campos[campo] = false;
+    }
+  }
+  
+  
+  
+  inputs.forEach((input) => {
+    input.addEventListener('keyup', validarFormulario);
+    input.addEventListener('blur', validarFormulario);
+  });
+  
+  formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const terminos = document.getElementById('terminos');
+    if(campos.usuario && campos.nombre && campos.password && campos.correo  ){
+      formulario.reset();
+  
+      document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+      setTimeout(() => {
+        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+      }, 5000);
+  
+      document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+        icono.classList.remove('formulario__grupo-correcto');
+      });
+    } else {
+      document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
+  });
   
   
   // Traer valores
