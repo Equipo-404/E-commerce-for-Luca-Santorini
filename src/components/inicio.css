@@ -164,14 +164,35 @@
 @media (max-width: 1266px) {
     #Imagen1NovedadesInicio {
         margin-top: 0;
-        width: 100%;
+        width: auto;
     }
     #Imagen2NovedadesInicio {
       margin-top: 0;
-      width: 100%;
+      width: auto;
   }
     #Imagen3NovedadesInicio {
         margin-top: 0;
+        width: auto;
+    }
+    #ImagenTerceraSeccionInicio {
+      width: auto;
+    }
+  }
+  @media (max-width: 460px) {
+    #Imagen1NovedadesInicio {
         width: 100%;
+        height: auto;
+    }
+    #Imagen2NovedadesInicio {
+      width: 100%;
+      height: auto;
+  }
+    #Imagen3NovedadesInicio {
+      width: 100%;
+      height: auto;
+    }
+    #ImagenTerceraSeccionInicio {
+      width: 100%;
+      height: auto;
     }
   }
