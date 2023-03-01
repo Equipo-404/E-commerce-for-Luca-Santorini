@@ -58,7 +58,7 @@ export default class LogIn extends Component {
                                                         <input type="text" className="formulario__input" name="nombre" id="regname" placeholder="Nombre completo"></input>
                                                         <i class="formulario__validacion-estado fas"></i>
                                                     </div>
-                                                    <p className="formulario__input-error">El usuario tiene que ser de 4 a 40 dígitos. </p>
+                                                    <p className="formulario__input-error">El nombre tiene que ser de 4 a 40 dígitos. </p>
                                                 </div>
 
                                                 <div className="formulario__grupo" id="grupo__registro-usuario">
@@ -66,14 +66,14 @@ export default class LogIn extends Component {
                                                         <input type="email" className="formulario__input" name="correo" id="regemail" placeholder="Correo electrónico"></input>
                                                         <i class="formulario__validacion-estado fas"></i>
                                                     </div>
-                                                    <p className="formulario__input-error">El correo debe tener una estructura valida.</p>
+                                                    <p className="formulario__input-error">El correo debe tener una estructura válida.</p>
                                                 </div>
                                                 <div className="formulario__grupo" id="grupo__registro-password">
                                                     <div className="formulario__grupo-input">
                                                         <input type="password" className="formulario__input" name="password" id="regpass" placeholder='Contraseña'></input>
                                                         <i class="formulario__validacion-estado fas"></i>
                                                     </div>
-                                                    <p className="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos .</p>
+                                                    <p className="formulario__input-error">La contraseña tiene que ser de 6 a 12 dígitos .</p>
                                                 </div>
                                                 <br></br>                     
                                                 <button onClick={registerUser} id="register_button" className="loga" type="submit">Registrarme</button>
