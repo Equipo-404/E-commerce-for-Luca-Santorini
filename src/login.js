@@ -1,11 +1,11 @@
 // Function to validate the registration form using regex when keyup (name, username, email, password)
 export function registerUser() {
-  // If all the fields are valid, save the user data in localStorage
+  // Si los datos son correctos guardar en data in localStorage
   if (validateRegisterFields()) {
     let name = document.querySelector("#regname").value;
     let email = document.querySelector("#regemail").value;
     let password = document.querySelector("#regpass").value;
-    // Check if the user already exists
+    // Checar si el usuario (email) existe
     if (localStorage.getItem(email) !== null) {
       alert("El usuario ya existe");
       document.querySelectorAll(".formulario__grupo i").forEach((icon) => {
@@ -13,20 +13,27 @@ export function registerUser() {
       });
       return;
     }
-    // Save the user data in localStorage
+    // Guardar los datos en localStorage
     let user = {
       name: name,
       email: email,
       password: password
     };
+    console.log(user)
+    //  JSON string
+    const userJson = JSON.stringify(user);
+
+    //  objecto en el local storage
+    localStorage.setItem(user.email, userJson);
+    
     localStorage.setItem(email, JSON.stringify(user));
     alert("Usuario registrado");
     document.querySelectorAll(".formulario__grupo i").forEach((icon) => {
       icon.classList.remove("fa-check-circle");
     });
-    // Clear the form
+    // Limpiar registro
     document.querySelectorAll('input').forEach((input)=>{input.value = ''});
-    //take the user to the login page
+    //Cambiar a pagina de inicio
     document.querySelector("#reg-log").click();
 
   }
@@ -42,9 +49,9 @@ function validateRegisterFields() {
 
 
   // Regex for name, email, password
-  let nameRegex = /^[a-zA-Z ]{2,30}$/;
+  let nameRegex = /^[a-zA-Z ]{4,40}$/;
   let emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-  let passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+  let passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{4,12}$/;
   
 
   if (nameRegex.test(name)) {
@@ -108,16 +115,16 @@ export function validateLogin() {
   // Checar si el usuario es valido
   if (userString === null) {
     // Usar una alerta si no coincide
-    alert('usuario no es valido');
+    alert('El usuario no es válido');
   } else {
     // User exists - do something with the user data
     var user = JSON.parse(userString);
     if (user.password === userPassword) {
       // Contraseña validada - hacer algo
-      alert('Contaseña valida, Bienvenido');
+      alert('El usuario es correcto, Bienvenido');
     } else {
       // Si la contraseña es invalida - hacer otra cosa
-      alert('La contraseña es invalida');
+      alert('La contraseña es inválida');
     }
   }
 }
