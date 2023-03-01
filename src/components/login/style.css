@@ -312,7 +312,7 @@ font-family:themillions;
 }
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #3bd5f0;
-  font-size: 30px;
+  font-size: 25px;
 	opacity: 1;
 }
 
@@ -322,9 +322,7 @@ font-family:themillions;
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
 	color: #bb2929;
-  font-size: 30px ;
-  right: 10px;
-  bottom: 10px;
+  font-size: medium;
 	opacity: 1;
 }
 
