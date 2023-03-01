@@ -12,7 +12,7 @@ export default class LogIn extends Component {
                 <html>
                     <body className='booty'>
                         <div clasName="section-phan" action="" className="formulario" id="formulario">
-                            <h6 className="change"><span>Iniciar Sesíon </span><span>Registrarte</span></h6>
+                            <h6 className="change"><span>Iniciar Sesión </span><span>Registrarte</span></h6>
                             <input className="checkbox" type="checkbox" id="reg-log" name="reg-log" />
                             <label for="reg-log"></label>
                             <div className="card-3d-wrap mx-auto">
@@ -20,7 +20,7 @@ export default class LogIn extends Component {
                                     <div className="card-front">
                                         <div className="center-wrap">
                                             <div className="section text-center">
-                                                <h1 className="titulitu">Iniciar Sesíon</h1>
+                                                <h1 className="titulitu">Iniciar Sesión</h1>
                                                 <div className="formulario__grupo" id="grupo__usuario">
                                                     <div className="formulario__grupo-input">
                                                         <input type="email" className="formulario__input" name="correo" id="correo" placeholder="Correo electrónico"></input>
@@ -38,7 +38,7 @@ export default class LogIn extends Component {
                                                 </div>
                                                 <br></br>
                                                 <div>
-                                                    <button onClick={ validateLogin } className="loga" type="submit">Iniciar Sesíon</button>
+                                                    <button onClick={ validateLogin } className="loga" type="submit">Iniciar Sesión</button>
                                                 </div>
                                                 <br></br>
                                                 <div>
