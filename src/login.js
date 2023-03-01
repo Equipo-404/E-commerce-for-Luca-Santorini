@@ -115,16 +115,16 @@ export function validateLogin() {
   // Checar si el usuario es valido
   if (userString === null) {
     // Usar una alerta si no coincide
-    alert('usuario no es valido');
+    alert('El usuario no es válido');
   } else {
     // User exists - do something with the user data
     var user = JSON.parse(userString);
     if (user.password === userPassword) {
       // Contraseña validada - hacer algo
-      alert('Contaseña valida, Bienvenido');
+      alert('El usuario es correcto, Bienvenido');
     } else {
       // Si la contraseña es invalida - hacer otra cosa
-      alert('La contraseña es invalida');
+      alert('La contraseña es inválida');
     }
   }
 }
