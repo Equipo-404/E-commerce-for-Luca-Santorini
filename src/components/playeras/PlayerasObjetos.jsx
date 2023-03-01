@@ -8,74 +8,74 @@ function Items() {
     const [items, setItems] = useState([
         {
             id: 1,
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442581/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_elxe1p.png',
-            description: 'Playera Danny Ocean Babylon azul fuerte ',
+            name: '$270MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553321/LOVE_4_GALLI_FRONTAL_BLANCA_cjtkic.png',
+            description: 'Esta es perfecta para rockearla en tal fecha, un uniforme para todo cuaadeño o artista de closet',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
           
         },
         {
             id: 2,
-            name: '$159MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676683694/LOVE_4_GALLI_BLANCA_FRONTAL_sthzg9.png',
-            description: 'Playera blanca con estampado luca santorini ',
+            name: '$300MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677640692/LSSW_x_DANY_OC%C3%89ANO_BABYLON_G_AZUL_FRONTAL_a9dp8w.png',
+            description: 'En más de 5 colorways',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 3,
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442331/DADDY_YANKEE_X_LSSW_NEGRA_FRONTAL_g3xfgf.png',
+            name: '$350MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553319/LAS_DEL_BELLAKEO_NEGRA_FRONTAL_rhoyyl.png',
             description: 'Playera negra con estampado bellakeo old school',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 4,
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676442366/HARRY_STYLES_LOVE_ON_TOUR_BLANCA_ESPALDA_lhzdil.png',
-            description: 'Playera blanca estampado Harry Styles',
+            name: '$300MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677640966/LSSW_x_DANY_OC%C3%89ANO_BABYLON_G_AZUL_REY_FRONTAL_foxdgx.png',
+            description: 'En más de 5 colorways',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 5,
-            name: '$99MXN.',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676390493/BASICA_BLANCA_x_LSSW_bwtd9f.png',
-            description: 'Playera blanca básica x LSSW',
+            name: '$300MXN.',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553314/LSSW_x_DANNY_OC%C3%89ANO_BABYLON_G_VERDE_DELANTERA_vjxzlg.png',
+            description: 'En más de 5 colorways',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 6,
-            name: '$99MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676358008/BASICA_ROJA_x_LSSW_rv10qr.png',
-            description: 'Playera básica roja x LSSW',
+            name: '$300MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553305/LSSW_x_DANNY_OC%C3%89ANO_BABYLON_G_ROJA_DELANTERA_pgaphf.png',
+            description: 'En más de 5 colorways',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 7,
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158102/HARRY_STYLES_LOVE_ON_TOUR_BLANCA_FRONTAL_y51xsp.png',
-            description: 'Playera Harry Styles love on tour',
+            name: '$300MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553304/HARRY_EN_GUANATOS_BLANCA_FRONTAL_hvt0jz.png',
+            description: '“It was given to me on my last visit to the VFG arena, now I don\'t take it off. I love you my watermelonas”',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 8,
-            name: '$99MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676358009/BASICA_NEGRA_x_LSSW_eeyinf.png',
-            description: 'Playera básica negra x LSSW',
+            name: '$350MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553302/LAS_DEL_BELLAKEO_BEIGE_FRONTAL_lsgtsu.png',
+            description: 'Playera beige con estampado bellakeo old school',
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         },
         {
             id: 9,
-            name: '$99MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676356841/BASIC_VERDE_X_LSSW_rtnbzi.png',
-            description: 'Playera básica verde x LSSW',   
+            name: '$350MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553300/LAS_DEL_BELLAKEO_AZUL_FRONTAL_so3nr3.png',
+            description: 'Playera azul con estampado bellakeo old school',   
             options: ['Chica', 'Mediana', 'Grande'],
             selectedOption: null
         }
@@ -98,7 +98,7 @@ function Items() {
 
             <div id="items-containerleo" className='items-grid'>
                 {items.map((item, index) => (
-                    <div key={item.img} className="item">
+                    <div key={item.img} className="itemplayera">
                         <Container>
                         <img className='imagenesplayerasleo' src={item.img} alt={item.name} />
                         <CardSubtitle className="precioleo"><p>{item.name}</p>
