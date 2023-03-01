@@ -1,6 +1,6 @@
 .booty{
   width: 100%;  
-  line-height: .5;
+  line-height: 1;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -165,7 +165,7 @@ backface-visibility: hidden;
 .formulario__input {
 margin-left: 15px;
 padding: 20px;
-
+padding-left: px;
 height: 25px;
 width: 80%;
 font-weight: 500;
@@ -226,7 +226,6 @@ font-family:themillions;
   outline: none;
   color: #000000;
   background-color: #f6f1f1;
- 
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
@@ -310,6 +309,27 @@ font-family:themillions;
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+}
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #3bd5f0;
+  font-size: 30px;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+  font-size: 30px ;
+  right: 10px;
+  bottom: 10px;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
 }
 
 .loga{  
