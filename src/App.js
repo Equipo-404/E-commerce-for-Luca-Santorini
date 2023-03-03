@@ -16,6 +16,7 @@ import 'animate.css';
 import Contacto from './components/contacto/Contacto';
 import Checkout from './components/checkout/Checkout';
 import AdminProductos from './components/adminproductos/AdminProductos';
+import Error404 from './components/error404/Error404';
 
 
 
@@ -51,14 +52,14 @@ function App() {
         <Route exact path="/" component={Inicio} />
         <Route exact path="/About404" component={About404} />
         <Route exact path="/AboutLuc" component={AboutLuc} />
-
         <Route exact path="/LogIn" component={LogIn} />
         <Route exact path="/Items" component={Items} />
         <Route exact path="/novedades" component={Novedades} />
         <Route exact path="/Carrito" component={Carrito} />
         <Route exact path="/Checkout" component={Checkout} />
         <Route exact path="/Contacto" component={Contacto} />
-        <Route exact path="/AdminProductos" component={AdminProductos} /> 
+        <Route exact path="/AdminProductos" component={AdminProductos} />
+        <Route path="/" component={Error404}/> 
       </Switch>
       <Footer/>
     </Router>
