@@ -9,6 +9,7 @@
     left: 0;
     right: 0;
     padding-top: .5rem;
+    width: 100%;
   }
   .navbar-section {
     display: flex;
@@ -71,14 +72,14 @@
     height: 2rem;
   }
   #IconoUsuario{
-    margin-left: 1rem;
+    margin-left: .5rem;
     margin-right: .5rem;
     width: 2rem;
     height: 2rem;
   }
   #iconoBolsaCompra{
     margin-left: .5rem;
-    margin-right: 1rem;
+    margin-right: .5rem;
     width: 2rem;
     height: 2rem;
   }
@@ -102,12 +103,13 @@
     opacity: .8;
     display: none;
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     bottom: 0;
     width:  300px;
+    height: 100%;
     background-color: #EEE8AA;
-    height: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   #botonAbrirNavbar2 {
@@ -144,8 +146,13 @@
     padding: 10px;
     font-weight: 800;
   }
-  #navbar2-seccion1 {
-    padding-bottom: 80%;
+  #navbar2-seccion2 {
+    margin-top: 60%;
+  }
+  @media (max-height: 665px) {
+  #navbar2-seccion2 {
+      margin-top: 20%;
+    }
   }
   #navbar2-seccion2 ul {
     list-style: none;

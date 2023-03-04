@@ -32,11 +32,17 @@
  @media (max-width: 525px) {
     .segundotextoleo{
         font-family: applegaramound;
-        font-size: 500%;
+        font-size: 400%;
         margin: 13%;
     }
   }
-
+  @media (max-width: 300px) {
+    .segundotextoleo{
+        font-family: applegaramound;
+        font-size: 300%;
+        margin: 13%;
+    }
+  }
   
   
   #imgleo {
@@ -49,7 +55,6 @@
     text-align: center;
     font-family:'applegaramound';
     font-size: 20px;
-    font-weight: 700;
     color: #FFFFFF;
     background: #040807;
     border: 1px solid #040807 ;
@@ -75,7 +80,7 @@
     font-family: applegaramoundbase;
 }
  .botonleo , .precioleo{
-   position: relative;
+  margin-bottom: 2%;   
    top: -30px;
 }
 .imagenesplayerasleo{

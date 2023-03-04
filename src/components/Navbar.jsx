@@ -26,7 +26,7 @@ function Navbar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);  
+  }, []);
   return (
     <nav ref={navbarRef} className="NavbarPrincipal">
       <button id="botonAbrirNavbar2">
@@ -42,8 +42,8 @@ function Navbar() {
           <input id="inputBusqueda" type="text" />
         </div>
         <Link to="./LogIn">
-          <img src={IconoUsuario}id="IconoUsuario" alt="icono de usuario" />
-          </Link>
+          <img src={IconoUsuario} id="IconoUsuario" alt="icono de usuario" />
+        </Link>
         <Link to="/Carrito">
           <img src={iconoBolsaCompra} id="iconoBolsaCompra" alt="icono de bolsa de compras" />
         </Link>
@@ -52,12 +52,15 @@ function Navbar() {
   );
 }
 function Navbar2() {
+  const navbar2Ref = useRef(null);
   useEffect(() => {
     const botonAbrirNavbar2 = document.getElementById("botonAbrirNavbar2");
-    const imagenMenu = document.getElementById("iconoMenu");
     const botonCerrarNavbar2 = document.getElementById("botonCerrarNavbar2");
     const navbar2 = document.getElementById("NavbarDesplegabeLateral");
-
+    const imagenMenu = document.getElementById("iconoMenu");
+    if (imagenMenu) {
+      imagenMenu.style.visibility = "visible";
+    }
     botonAbrirNavbar2.addEventListener("click", function () {
       navbar2.style.display = "block";
       if
@@ -73,36 +76,71 @@ function Navbar2() {
     });
   }, []);
   return (
-    <nav id="NavbarDesplegabeLateral">
+    <nav id="NavbarDesplegabeLateral" ref={navbar2Ref}>
       <button id="botonCerrarNavbar2">
         <img src={iconoEliminar} id="iconoCerrar" alt="icono para cerrar el menú" />
       </button>
       <div id="navbar2-seccion1">
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}> Inicio</Link>
           </li>
           <li>
-            <Link to="/Novedades">Novedades</Link>
+            <Link to="/Novedades" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Novedades</Link>
           </li>
           <li>
-            <Link to="/Items">Playeras</Link>
+            <Link to="/Items" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Playeras</Link>
           </li>
           <li>
-            <Link to="/Carrito">Mi bolsa</Link>
+            <Link to="/Carrito" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Mi bolsa</Link>
           </li>
         </ul>
       </div>
       <div id="navbar2-seccion2">
         <ul>
           <li>
-            <Link to="/AboutLuc">Acerca de Luca santorini</Link>
+            <Link to="/AboutLuc" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Acerca de Luca santorini</Link>
           </li>
           <li>
-            <Link to="/About404">Acerca de equipo 404</Link>
+            <Link to="/About404" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Acerca de equipo 404</Link>
           </li>
           <li>
-            <Link to="/Contacto">Contacto</Link>
+            <Link to="/Contacto" onClick={() => {
+              const imagenMenu = document.getElementById("iconoMenu");
+              navbar2Ref.current.style.display = "none";
+              imagenMenu.style.visibility = "visible";
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Contacto</Link>
           </li>
         </ul>
       </div>
