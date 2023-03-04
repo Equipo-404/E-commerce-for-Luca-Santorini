@@ -1,6 +1,6 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./AdminProductos.css";
+import { data } from "./Productos";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
@@ -15,11 +15,6 @@ import {
   ModalFooter,
 } from "reactstrap";
 
-const data = [
-  { id: 1, imagen: "", descripcion: "Playera", color: "Blanco", talla: "Mediana", cantidad: "5"},
-  { id: 2, imagen: "", descripcion: "Pantalón", color: "Negro", talla: "Pequeña", cantidad: "2"},
-];
-
 class AdminProductos extends React.Component {
   state = {
     data: data,
@@ -27,10 +22,10 @@ class AdminProductos extends React.Component {
     modalInsertar: false,
     form: {
       id: "",
-      imagen: "",
-      descripcion: "",
+      img: "",
+      description: "",
       color: "",
-      talla: "",
+      options: "",
       cantidad: "",
     },
   };
@@ -61,10 +56,10 @@ class AdminProductos extends React.Component {
     var arreglo = this.state.data;
     arreglo.map((registro) => {
       if (dato.id == registro.id) {
-        arreglo[contador].imagen = dato.imagen;
-        arreglo[contador].descripcion = dato.descripcion;
+        arreglo[contador].img = dato.img;
+        arreglo[contador].description = dato.description;
         arreglo[contador].color = dato.color;
-        arreglo[contador].talla = dato.talla;
+        arreglo[contador].options = dato.options;
         arreglo[contador].cantidad = dato.cantidad;
       }
       contador++;
@@ -120,10 +115,10 @@ class AdminProductos extends React.Component {
                   <thead>
                   <tr>
                       <th>ID</th>
-                      <th>Imagen</th>
+                      <th>img</th>
                       <th>Descripción</th>
                       <th>Color</th>
-                      <th>Talla</th>
+                      <th>options</th>
                       <th>Cantidad</th>
                       <th colSpan={2}>Operaciones</th>
                   </tr>
@@ -133,10 +128,10 @@ class AdminProductos extends React.Component {
                   {this.state.data.map((dato) => (
                       <tr key={dato.id}>
                       <td>{dato.id}</td>
-                      <td>{dato.imagen}</td>
-                      <td>{dato.descripcion}</td>
+                      <td><img className="img-table-products" src={dato.img}></img></td>
+                      <td>{dato.description}</td>
                       <td>{dato.color}</td>
-                      <td>{dato.talla}</td>
+                      <td>{dato.options}</td>
                       <td>{dato.cantidad}</td>
                       <td>
                           <Button
@@ -164,13 +159,13 @@ class AdminProductos extends React.Component {
 
             <ModalBody>
                 <FormGroup>
-                  <label> Imagen: </label>
+                  <label> img: </label>
                   <input
                     className="form-control"
                     readOnly
                     type="file"
                     onChange={this.handleImage}
-                    value={this.state.form.imagen}
+                    value={this.state.form.img}
                     required
                   />
                 </FormGroup>
@@ -179,10 +174,10 @@ class AdminProductos extends React.Component {
                   <label> Descripción: </label>
                   <input
                     className="form-control"
-                    name="descripcion"
+                    name="description"
                     type="text"
                     onChange={this.handleChange}
-                    value={this.state.form.descripcion}
+                    value={this.state.form.description}
                     required
                   />
                 </FormGroup>
@@ -200,13 +195,13 @@ class AdminProductos extends React.Component {
                 </FormGroup>
 
                 <FormGroup>
-                  <label> Talla: </label>
+                  <label> options: </label>
                   <input
                     className="form-control"
-                    name="talla"
+                    name="options"
                     type="text"
                     onChange={this.handleChange}
-                    value={this.state.form.talla}
+                    value={this.state.form.options}
                     required
                   />
                 </FormGroup>
@@ -249,13 +244,13 @@ class AdminProductos extends React.Component {
 
             <ModalBody>
             <FormGroup>
-                  <label> Imagen: </label>
+                  <label> img: </label>
                   <input
                     className="form-control"
                     readOnly
                     type="file"
                     onChange={this.handleChange}
-                    value={this.state.form.imagen}
+                    value={this.state.form.img}
                     required
                   />
                 </FormGroup>
@@ -264,10 +259,10 @@ class AdminProductos extends React.Component {
                   <label> Descripción: </label>
                   <input
                     className="form-control"
-                    name="descripcion"
+                    name="description"
                     type="text"
                     onChange={this.handleChange}
-                    value={this.state.form.descripcion}
+                    value={this.state.form.description}
                     required
                   />
                 </FormGroup>
@@ -285,13 +280,13 @@ class AdminProductos extends React.Component {
                 </FormGroup>
 
                 <FormGroup>
-                  <label> Talla: </label>
+                  <label> options: </label>
                   <input
                     className="form-control"
-                    name="talla"
+                    name="options"
                     type="text"
                     onChange={this.handleChange}
-                    value={this.state.form.talla}
+                    value={this.state.form.options}
                     required
                   />
                 </FormGroup>

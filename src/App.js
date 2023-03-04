@@ -34,7 +34,7 @@ function App() {
   }
 
   if (loading){
-    console.log("Llamada pantalla carga");
+    // console.log("Llamada pantalla carga");
     cambiarEstado();
     return(
       <Router>
