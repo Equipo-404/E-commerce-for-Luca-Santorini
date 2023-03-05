@@ -5,6 +5,7 @@ import 'animate.css';
  const PantallaCarga = () => {
   return (
     <> 
+  {/* Pagina para visualizar pantalla de carga al cargar página*/}
 <div className='pantallacarga-body'>
 <main className="cuadro-carga" style={{textAlign:'center'}}>
         <section className="square-loading-screen">
