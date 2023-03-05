@@ -6,63 +6,118 @@ import { Container,CardSubtitle} from 'reactstrap';
 function Novedades() {
    
     const [items, setItems] = useState([
-        
         {
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676693597/LIBRETA_I_AM_AN_ARTIST_NOT_A_DOCTOR_BLANCA_yrljlh.png',
-            description: 'Libreta 200 hojas, raya, doble raya, cuadrícula (chica o grande) o dibujo',
-            options: ['Raya', 'Doble raya', 'Cuadrícula chica', 'Cuadrícula grande', 'Dibujo'],
-            selectedOption: null
+            id: 4,
+            name: '$300MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677640966/LSSW_x_DANY_OC%C3%89ANO_BABYLON_G_AZUL_REY_FRONTAL_foxdgx.png',
+            description: 'En más de 5 colorways',
+            options: ['Chica', 'Mediana', 'Grande'],
+            selectedOption: null,
+            quantity: 0,
+            maxQuantity: 10, 
         },
         {
-            name: '$199MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158114/LIBRETA_NOT_A_DOCTOR_BLANCA_jsbn0a.png',
-            description: 'Libreta 200 hojas, raya, doble raya, cuadrícula (chica o grande) o dibujo',
-            options: ['Raya', 'Doble raya', 'Cuadrícula chica', 'Cuadrícula grande', 'Dibujo'],
-            selectedOption: null
+            id: 1,
+            name: '$270MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553321/LOVE_4_GALLI_FRONTAL_BLANCA_cjtkic.png',
+            description: 'Esta es perfecta para rockearla en tal fecha, un uniforme para todo cuaadeño o artista de closet',
+            options: ['Chica', 'Mediana', 'Grande'],
+            selectedOption: null,
+            quantity: 0,
+            maxQuantity: 5, 
+        },
+        {
+            id: 9,
+            name: '$350MXN',
+            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553300/LAS_DEL_BELLAKEO_AZUL_FRONTAL_so3nr3.png',
+            description: 'Playera azul con estampado bellakeo old school',   
+            options: ['Chica', 'Mediana', 'Grande'],
+            selectedOption: null,
+            quantity: 0,
+            maxQuantity: 7, 
         }
     ]);
-  
 
+    // Eliminamos los demás elementos del array items
+    
+  
     const handleOptionChange = (index, value) => {
         const newItems = [...items];
         newItems[index].selectedOption = value;
         setItems(newItems);
     };
+    const handleQuantityChange = (index, value) => {
+        const newItems = [...items];
+        if (value > newItems[index].maxQuantity) { 
+          newItems[index].quantity = newItems[index].maxQuantity; 
+        } else if (value < 0) {
+          newItems[index].quantity = 0;
+        } else {
+          newItems[index].quantity = value;
+        }
+        setItems(newItems);
+      };
 
-    return (
+      return (
         <>
-        
-        <div >
-            <img id="imgleo" src="https://res.cloudinary.com/dgp2sgznp/image/upload/v1676831013/Assets/IMG_9869_h0cvb0.jpg" alt="hombre y mujer sentados en la acera con payeras puestas love 4 galli blancas"></img>
-            </div>
-         
-            
-            <div className="segundotextoleo"><p>Novedades</p></div>
-
-            <div id="items-containerleo" className='items-grid'>
-                {items.map((item, index) => (
-                    <div key={item.img} className="item">
-                        <Container>
-                        <img className='imagenesplayerasleo' src={item.img} alt={item.name} />
-                        <CardSubtitle className="precioleo"><p>{item.name}</p>
-                        <p className='descripcionleo'>{item.description}</p>
-                        <select className='opcioneslibretas' value={item.selectedOption || ''} onChange={(e) => handleOptionChange(index, e.target.value)}>
-                            <option value={null}>Elija una opción</option>
-                            {item.options.map((option, optionIndex) => (
-                                <option key={optionIndex} value={option}>{option}</option>
-                            ))}
+          <div>
+            <img
+              id="imgleo"
+              src="https://res.cloudinary.com/dgp2sgznp/image/upload/v1676831013/Assets/IMG_9869_h0cvb0.jpg"
+              alt="hombre y mujer sentados en la acera con payeras puestas love 4 galli blancas"
+            />
+          </div>
+      
+          <div className="segundotextoleo">
+            <p>Novedades</p>
+          </div>
+      
+          <div id="items-containerleo" className="items-grid">
+            {items.map((item, index) => {
+              if (item.id === 4 || item.id === 1 || item.id === 9) {
+                return (
+                  <div key={item.img} className="item">
+                    <Container>
+                      <img className="imagenesplayerasleo" src={item.img} alt={item.name} />
+                      <CardSubtitle className="precioleo">
+                        <p>{item.name}</p>
+                        <p className="descripcionleo">{item.description}</p>
+                        <select
+                          className="opcioneslibretas"
+                          value={item.selectedOption || ""}
+                          onChange={(e) => handleOptionChange(index, e.target.value)}
+                        >
+                          <option value={null}>Elija una opción</option>
+                          {item.options.map((option, optionIndex) => (
+                            <option key={optionIndex} value={option}>
+                              {option}
+                            </option>
+                          ))}
                         </select>
-                        </CardSubtitle>
-                        <button className='botonleo'>agregar a la bolsa</button>
+                        <Container>
+                          <input
+                            type="number"
+                            min="0"
+                            max={item.maxQuantity}
+                            className="inputcantidadplayerasleo"
+                            placeholder="Cantidad que desea"
+                            value={item.quantity || ""}
+                            onChange={(e) => handleQuantityChange(index, parseInt(e.target.value))}
+                          ></input>
                         </Container>
-                     
-
-                    </div>
-                ))}
-            </div>
+                      </CardSubtitle>
+                      <button className="botonleo">agregar a la bolsa</button>
+                    </Container>
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
         </>
-    );
+      );
+      
 }
 
 export default Novedades;
