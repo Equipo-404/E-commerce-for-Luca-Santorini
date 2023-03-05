@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import "./ObjetosPlayeras.css";
 import { Container,CardSubtitle} from 'reactstrap';
 
-
+const addToCart = (item) => {
+    console.log(JSON.stringify(item));
+};
 function Novedades() {
    
     const [items, setItems] = useState([
@@ -40,7 +42,6 @@ function Novedades() {
 
     // Eliminamos los demás elementos del array items
     
-  
     const handleOptionChange = (index, value) => {
         const newItems = [...items];
         newItems[index].selectedOption = value;
@@ -57,6 +58,7 @@ function Novedades() {
         }
         setItems(newItems);
       };
+      
 
       return (
         <>
@@ -106,7 +108,7 @@ function Novedades() {
                           ></input>
                         </Container>
                       </CardSubtitle>
-                      <button className="botonleo">agregar a la bolsa</button>
+                      <button className="botonleo" onClick={() => addToCart(item)}>agregar a la bolsa</button>
                     </Container>
                   </div>
                 );

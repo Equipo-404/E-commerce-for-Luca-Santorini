@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import "./ObjetosPlayeras.css"
 import {  Container,CardSubtitle,} from 'reactstrap';
 
-
+const addToCart = (item) => {
+  console.log(JSON.stringify(item));
+};
 function Items() {
 
     const [items, setItems] = useState([
@@ -159,7 +161,7 @@ function Items() {
                     ></input>
                   </Container>
                 </CardSubtitle>
-                <button className="botonleo">agregar a la bolsa</button>
+                <button className="botonleo" onClick={() => addToCart(item)}>agregar a la bolsa</button>
               </Container>
             </div>
           ))}
