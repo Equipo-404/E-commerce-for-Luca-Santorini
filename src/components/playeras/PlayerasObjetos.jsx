@@ -149,17 +149,17 @@ function Items() {
                       </option>
                     ))}
                   </select>
-                  <Container>
+                  
                     <input
                       type="number"
                       min="0"
                       max="10"
                       className="inputcantidadplayerasleo"
-                      placeholder="Playeras que desea"
+                      placeholder="Cantidad"
                       value={item.quantity || ""}
                       onChange={(e) => handleQuantityChange(index, parseInt(e.target.value))}
                     ></input>
-                  </Container>
+                  
                 </CardSubtitle>
                 <button className="botonleo" onClick={() => addToCart(item)}>agregar a la bolsa</button>
               </Container>

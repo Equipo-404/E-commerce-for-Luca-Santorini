@@ -122,8 +122,8 @@
     background-color: black;
   color: white;
   border-radius: 10px;
-  max-width: 300px;
-  min-width: 200px;
+  max-width: 120px;
+  min-width: 50px;
   padding: 10px;
   }
 .inputcantidadplayerasleo:hover{

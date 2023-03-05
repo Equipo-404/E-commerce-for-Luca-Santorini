@@ -89,24 +89,24 @@ function Novedades() {
                           value={item.selectedOption || ""}
                           onChange={(e) => handleOptionChange(index, e.target.value)}
                         >
-                          <option value={null}>Elija una opción</option>
+                          <option value={null}>Tallas</option>
                           {item.options.map((option, optionIndex) => (
                             <option key={optionIndex} value={option}>
                               {option}
                             </option>
                           ))}
                         </select>
-                        <Container>
+                        
                           <input
                             type="number"
                             min="0"
                             max={item.maxQuantity}
                             className="inputcantidadplayerasleo"
-                            placeholder="Cantidad que desea"
+                            placeholder="Cantidad"
                             value={item.quantity || ""}
                             onChange={(e) => handleQuantityChange(index, parseInt(e.target.value))}
                           ></input>
-                        </Container>
+                        
                       </CardSubtitle>
                       <button className="botonleo" onClick={() => addToCart(item)}>agregar a la bolsa</button>
                     </Container>
