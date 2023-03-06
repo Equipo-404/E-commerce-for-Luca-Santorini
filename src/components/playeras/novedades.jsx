@@ -1,129 +1,138 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./ObjetosPlayeras.css";
-import { Container,CardSubtitle} from 'reactstrap';
+import { Container, Card, CardImg, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 
 function Novedades() {
   const [cart, setCart] = useState([]);
-  const addToCart = (item) => {
+  const [items, setItems] = useState([]);
+  const [selectedSizes, setSelectedSizes] = useState([]);
+  const [selectedQuantities, setSelectedQuantities] = useState([]);
+
+  useEffect(() => {
+    fetch('https://mocki.io/v1/e91da5a1-2d62-4a0e-a149-ce37bcf3fb73')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        const itemObjects = data.map(item => ({
+          ...item,
+          selectedSize: item.talla[0] // inicializa la talla seleccionada en la primera opción
+        }));
+        setItems(itemObjects);
+        setSelectedSizes(new Array(itemObjects.length).fill(itemObjects[0].talla[0]));
+        setSelectedQuantities(new Array(itemObjects.length).fill(1));
+      })
+      .catch(error => console.log(error));
+  }, []);
+
+  const addToCart = (item, selectedSize, selectedQuantity) => {
     setCart(prevCart => {
-      const newCart = [...prevCart, item];
+      const newCart = [...prevCart, { item, selectedSize, selectedQuantity }];
       console.log(newCart);
       return newCart;
     });
   };
-    const [items, setItems] = useState([
-        {
-            id: 4,
-            name: '$300MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677640966/LSSW_x_DANY_OC%C3%89ANO_BABYLON_G_AZUL_REY_FRONTAL_foxdgx.png',
-            description: 'En más de 5 colorways',
-            options: ['Chica', 'Mediana', 'Grande'],
-            selectedOption: null,
-            quantity: 0,
-            maxQuantity: 10, 
-        },
-        {
-            id: 1,
-            name: '$270MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553321/LOVE_4_GALLI_FRONTAL_BLANCA_cjtkic.png',
-            description: 'Esta es perfecta para rockearla en tal fecha, un uniforme para todo cuaadeño o artista de closet',
-            options: ['Chica', 'Mediana', 'Grande'],
-            selectedOption: null,
-            quantity: 0,
-            maxQuantity: 5, 
-        },
-        {
-            id: 9,
-            name: '$350MXN',
-            img: 'https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553300/LAS_DEL_BELLAKEO_AZUL_FRONTAL_so3nr3.png',
-            description: 'Playera azul con estampado bellakeo old school',   
-            options: ['Chica', 'Mediana', 'Grande'],
-            selectedOption: null,
-            quantity: 0,
-            maxQuantity: 7, 
-        }
-    ]);
 
-    
-    
-    const handleOptionChange = (index, value) => {
-        const newItems = [...items];
-        newItems[index].selectedOption = value;
-        setItems(newItems);
-    };
-    const handleQuantityChange = (index, value) => {
-        const newItems = [...items];
-        if (value > newItems[index].maxQuantity) { 
-          newItems[index].quantity = newItems[index].maxQuantity; 
-        } else if (value < 0) {
-          newItems[index].quantity = 0;
-        } else {
-          newItems[index].quantity = value;
-        }
-        setItems(newItems);
+  const handleSizeChange = (index, value) => {
+    setItems(prevItems => {
+      const updatedItems = [...prevItems];
+      updatedItems[index] = {
+        ...updatedItems[index],
+        selectedSize: value
       };
-      
+      return updatedItems;
+    });
+    setSelectedSizes(prevSelectedSizes => {
+      const updatedSelectedSizes = [...prevSelectedSizes];
+      updatedSelectedSizes[index] = value;
+      return updatedSelectedSizes;
+    });
+  };
+  const handleQuantityChange = (index, value) => {
+    const newItems = [...items];
+    const maxQuantity = newItems[index].cantidad;
+    if (value > maxQuantity) { 
+      newItems[index].selectedQuantity = maxQuantity; // establece la cantidad seleccionada en la cantidad máxima permitida
+    } else if (value < 0) { 
+      newItems[index].selectedQuantity = 0; // establece la cantidad seleccionada en cero si el valor ingresado es negativo
+    } else {
+      newItems[index].selectedQuantity = value; // actualiza la cantidad seleccionada
+    }
+    setItems(newItems);
+  };
 
-      return (
-        <>
-          <div>
-            <img
-              id="imgleo"
-              src="https://res.cloudinary.com/dgp2sgznp/image/upload/v1676831013/Assets/IMG_9869_h0cvb0.jpg"
-              alt="hombre y mujer sentados en la acera con payeras puestas love 4 galli blancas"
-            />
-          </div>
+  return (
+    <>
+    <div>
+    <img
+           id="imgleo"
+           src="https://res.cloudinary.com/dgp2sgznp/image/upload/v1676831013/Assets/IMG_9869_h0cvb0.jpg"
+           alt="hombre y mujer sentados en la acera con payeras puestas love 4 galli blancas"
+         />
+    </div>
+  
+    <div className="segundotextoleo">
+    <p>Novedades</p>
+  </div>
+
+  <div id="items-containerleo" className="items-grid">
+    {items.map((item, index) => {
       
-          <div className="segundotextoleo">
-            <p>Novedades</p>
+        return (
+          <div key={item.foto} className="item">
+            <Container>
+              <CardImg className="imagenesplayerasleo" src={item.foto} alt={item.nombre} />
+              <CardSubtitle className="precioleo">
+                <p>{item.name}</p>
+                <p className="descripcionleo">{item.description}</p>
+                <select className="opcioneslibretas" value={item.selectedSize} onChange={(e) => handleSizeChange(index, e.target.value)}>
+                  {item.talla.map((talla, index) => (
+                    <option key={index} value={talla}>{talla}</option>
+                  ))}
+                </select>
+                <input 
+  type="number" 
+  placeholder='Cantidad' 
+  className="inputcantidadplayerasleo" 
+  min="0" 
+  max={item.cantidad} 
+  value={item.selectedQuantity || ""} 
+  onChange={(e) => {
+    const value = parseInt(e.target.value);
+    const maxQuantity = item.cantidad;
+    if (value > maxQuantity) { 
+      setItems(prevItems => {
+        const updatedItems = [...prevItems];
+        updatedItems[index] = {
+          ...updatedItems[index],
+          selectedQuantity: maxQuantity
+        };
+        return updatedItems;
+      });
+    } else {
+      setItems(prevItems => {
+        const updatedItems = [...prevItems];
+        updatedItems[index] = {
+          ...updatedItems[index],
+          selectedQuantity: value
+        };
+        return updatedItems;
+      });
+    }
+  }} 
+/>
+              </CardSubtitle>
+       <button className="botonleo" onClick={() => addToCart(item, item.selectedSize, item.selectedQuantity)}>agregar a la bolsa</button>
+            </Container>
           </div>
-      
-          <div id="items-containerleo" className="items-grid">
-            {items.map((item, index) => {
-              if (item.id === 4 || item.id === 1 || item.id === 9) {
-                return (
-                  <div key={item.img} className="item">
-                    <Container>
-                      <img className="imagenesplayerasleo" src={item.img} alt={item.name} />
-                      <CardSubtitle className="precioleo">
-                        <p>{item.name}</p>
-                        <p className="descripcionleo">{item.description}</p>
-                        <select
-                          className="opcioneslibretas"
-                          value={item.selectedOption || ""}
-                          onChange={(e) => handleOptionChange(index, e.target.value)}
-                        >
-                          <option value={null}>Tallas</option>
-                          {item.options.map((option, optionIndex) => (
-                            <option key={optionIndex} value={option}>
-                              {option}
-                            </option>
-                          ))}
-                        </select>
-                        
-                          <input
-                            type="number"
-                            min="0"
-                            max={item.maxQuantity}
-                            className="inputcantidadplayerasleo"
-                            placeholder="Cantidad"
-                            value={item.quantity || ""}
-                            onChange={(e) => handleQuantityChange(index, parseInt(e.target.value))}
-                          ></input>
-                        
-                      </CardSubtitle>
-                      <button className="botonleo" onClick={() => addToCart(item)}>agregar a la bolsa</button>
-                    </Container>
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </div>
-        </>
-      );
-      
+        );
+
+    })}
+  </div>
+</>
+  ); 
 }
 
 export default Novedades;
+
+
+
