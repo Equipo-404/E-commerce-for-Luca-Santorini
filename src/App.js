@@ -16,6 +16,7 @@ import 'animate.css';
 import Contacto from './components/contacto/Contacto';
 import Checkout from './components/checkout/Checkout';
 import AdminProductos from './components/adminproductos/AdminProductos';
+import cart from './components/carrito/cart';
 
 
 
@@ -58,7 +59,9 @@ function App() {
         <Route exact path="/Carrito" component={Carrito} />
         <Route exact path="/Checkout" component={Checkout} />
         <Route exact path="/Contacto" component={Contacto} />
-        <Route exact path="/AdminProductos" component={AdminProductos} /> 
+        <Route exact path="/AdminProductos" component={AdminProductos} />
+        {/*Para hacer pruebas*/}
+        <Route exact path="/cart" component={cart} />
       </Switch>
       <Footer/>
     </Router>

@@ -1,8 +1,26 @@
 import React from 'react'
 import './Carrito.css';
 import 'animate.css';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { useState, useEffect } from "react";
+import {Toaster, Position} from '@blueprintjs/core';
+import Cart from "./cart";
+import { useHistory } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+function App() {
+    return (
+      <div className="App">
+        <Switch>
+          <Route exact path="/cart" component={Cart} />
+        </Switch>
+      </div>
+    );
+  }
+
+const AppToaster = Toaster.create({
+    position: Position.TOP,
+  })
 
 export default function Traer() {
     const [data, setData] = useState(null);
@@ -10,6 +28,39 @@ export default function Traer() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     let total=0;
+    const [prods, setProds] = useState([])
+    const history = useHistory();
+
+{/*Inicialización de función para eliminar productos*/}
+   
+const deleteProduct = id => {
+        fetch(`https://jsonplaceholder.typicode.com/posts/https://jsonplaceholder.typicode.com/posts/${id}`, {
+          method: "DELETE",
+        })
+          .then(response => response.json())
+          .then(() => {
+            setProds(values => {
+               {values.filter(item => item.id !== id);
+              console.log('fetch eliminar');}
+            })
+            AppToaster.show({
+              message: "Product deleted successfully",
+              intent: "success",
+              timeout: 3000,
+            });
+          // history.push("/cart");
+          })
+          .then(()=>{
+          console.log("llamada inicio")
+        });
+          
+          
+          
+          }
+
+        
+    
+
 
 {/* Función fetch para iterar lo elementos de carrito*/}
     useEffect(() => {
@@ -22,7 +73,7 @@ export default function Traer() {
                 
                 usefulData.forEach(element => {
                     total+=element.subtotal;
-                    console.log('prueba' + total)
+                   //console.log('prueba' + total)
                 });
                 setResumen(total);
 
@@ -37,9 +88,7 @@ export default function Traer() {
         <>
             <div className="Traer">
                 <br />
-                <br />
-                <br />
-                <br />
+                            
                 {loading && <p>Loading...</p>}
                 {!loading &&
             <div>
@@ -50,29 +99,37 @@ export default function Traer() {
 
 {/* Tabla de lista de productos */}
     <table className="product-list" >
-        {data.map((element)=>{
+    <tbody>
+        
+            
+        {data.map((element=>{
+            
             return <>
                 <tr>
-                <td rowspan="3"> <img src={element.productos.foto}
+                <td rowSpan="3" className='productrow'> <img src={element.productos.foto}
                 className="shirt-picture" alt=''></img></td>
-                <td colspan="2" className="product-name">{element.productos.nombre}</td>
-                </tr>
-                    
+                <td colSpan="2" className="product-name">{element.productos.nombre}</td>
+                </tr>   
                 <tr>
-                <td colspan="2" className="text-description">{element.productos.descripcion} <br /> Talla: {element.productos.talla} <br /> Color: {element.productos.color} <br /> Cantidad: {element.cantidad} pza.</td>
+                <td colSpan="2" className="text-description">{element.productos.descripcion} <br /> Talla: {element.productos.talla} <br /> Color: {element.productos.color} <br /> Cantidad: {element.cantidad} pza.</td>
                 </tr>
-                    
+                <tr>  
                 <td className="price">${element.productos.precio}.00 mxn</td>
-                <td className="delete-item">Eliminar</td>
+{/*Eliminar producto*/}
+                <td className="delete-item" onClick={()=> deleteProduct()} >Eliminar</td>
+                </tr>
             </>
-                })}
+           }))}     
+                
+    </tbody>
     </table> 
 
 {/*Tabla resumen de lista de productos*/}
 
     <table className="resume-items">
+        <tbody>
         <tr>
-        <th colspan="2" className="total-title">Total</th>
+        <th colSpan="2" className="total-title">Total</th>
         </tr>
 {/*item 1*/}
 
@@ -87,15 +144,16 @@ export default function Traer() {
 
 {/*Total tabla resumen de lista de productos*/}
        <tr>
-        <td colspan="1" className="total-description">Suma total</td>
-        <td colspan="1" className="total-price">$ {resumen}.00 mxn</td>
+        <td colSpan="1" className="total-description">Suma total</td>
+        <td colSpan="1" className="total-price">$ {resumen}.00 mxn</td>
         </tr>
         
         <tr>
-        <td className="checkout" colspan="2" >
+        <td className="checkout" colSpan="2" >
         <Link to="/Checkout"><button className="button-carrito">Checkout</button></Link>
         </td>  
-        </tr>   
+        </tr>
+        </tbody>   
     </table>
                         
     </div>}
@@ -108,5 +166,6 @@ export default function Traer() {
     
       
 }
+
 
 

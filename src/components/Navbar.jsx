@@ -142,6 +142,7 @@ function Navbar2() {
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}>Contacto</Link>
           </li>
+
         </ul>
       </div>
     </nav>

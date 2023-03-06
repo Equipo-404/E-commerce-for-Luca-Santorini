@@ -27,9 +27,11 @@ body {
     height: 220.5px;
     padding: 10px 10px 40px 10px;
     border: 0.05px #c3c3c3 solid;
-    margin: 30px 10px 10px 10px;
+    margin: 23px 10px 10px 10px;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 1.2%;
+    vertical-align:bottom;
+    
 
 }
 
@@ -182,7 +184,7 @@ body {
     background: #eee8aa;
     box-shadow: 2px 3px 4px 2px #808080;
     text-decoration: underline;
-  text-decoration-color: #eee8aa;
+    text-decoration-color: #eee8aa;
 
     
     
@@ -267,4 +269,8 @@ body {
     }
 }
 
-
+.productrow {
+ padding: 30px 10px 5px 15px;
+ margin: 2px;
+ vertical-align:top;
+}
