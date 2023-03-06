@@ -5,59 +5,26 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 
 export default function Traer() {
-
     const [data, setData] = useState(null);
     const [resumen, setResumen] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    let htmlText = "";
-    let totalFinal = 0;
-    let htmlResumen = `<tr>
-  <th colspan="2" class="total-title">Total</th> 
-  </tr>`;
+    let total=0;
 
 {/* Función fetch para iterar lo elementos de carrito*/}
     useEffect(() => {
-        fetch(`https://mocki.io/v1/10cab395-70af-496c-862f-647b1e65a75e`)
+        fetch(`https://mocki.io/v1/3f1a13b3-bb78-4f3b-baad-59c80aee4340`)
             .then(response => response.json())
             .then((usefulData) => {
                 console.log(usefulData);
                 setLoading(false);
-
+                setData(usefulData);
+                
                 usefulData.forEach(element => {
-                    console.log(element);
-                    htmlText += `<tr>
-            <td rowspan="3"> <img src=${element.productos.foto}
-                    class="shirt-picture" alt=''></img></td>
-            <td colspan="2" class="product-name">${element.productos.nombre}</td>
-            </tr>
-            <tr>
-            <td colspan="2" class="text-description">${element.productos.descripcion} </br>Talla: ${element.productos.talla}
-            </br>Color: ${element.productos.color} </br>Cantidad: ${element.cantidad} pza.
-            </td>
-            </tr>
-        
-            <td class="price">$ ${element.productos.precio}.00 mxn</td>
-        
-            <td class="delete-item">Eliminar</td>`;
-                    htmlResumen += `<tr>
-            <td class="product-resume">${element.productos.nombre} (${element.cantidad}pza) </td>
-            <td class="price-resume">$ ${element.pedidos.montoTotal}.00 mxn</td>
-            </tr>`;
-                    totalFinal += element.pedidos.montoTotal;
-
+                    total+=element.subtotal;
+                    console.log('prueba' + total)
                 });
-
-                htmlResumen += `<tr>
-            <td colspan="1" class="total-description">Suma total</td>
-            <td colspan="1" class="total-price">$ ${totalFinal}.00 mxn</td>
-            </tr> 
-            <tr>
-            <td class="checkout" colspan="2" >
-            </td> 
-            </tr>`;
-                setData(htmlText);
-                setResumen(htmlResumen);
+                setResumen(total);
 
             })
             .catch((e) => {
@@ -65,6 +32,7 @@ export default function Traer() {
             });
     }, []);
 
+ 
     return (
         <>
             <div className="Traer">
@@ -74,26 +42,71 @@ export default function Traer() {
                 <br />
                 {loading && <p>Loading...</p>}
                 {!loading &&
+            <div>
+    <br/>
+    <section>
+    <h1 className="header-carrito">Tu bolsa</h1>
+    </section>
 
-                    <div><br />
-                        <section>
-                            <h1 className="header-carrito">Tu bolsa</h1>
-                        </section>
+{/* Tabla de lista de productos */}
+    <table className="product-list" >
+        {data.map((element)=>{
+            return <>
+                <tr>
+                <td rowspan="3"> <img src={element.productos.foto}
+                className="shirt-picture" alt=''></img></td>
+                <td colspan="2" className="product-name">{element.productos.nombre}</td>
+                </tr>
+                    
+                <tr>
+                <td colspan="2" className="text-description">{element.productos.descripcion} <br /> Talla: {element.productos.talla} <br /> Color: {element.productos.color} <br /> Cantidad: {element.cantidad} pza.</td>
+                </tr>
+                    
+                <td className="price">${element.productos.precio}.00 mxn</td>
+                <td className="delete-item">Eliminar</td>
+            </>
+                })}
+    </table> 
 
-                        {/* Tabla de lista de productos */}
-                        <table className="product-list" dangerouslySetInnerHTML={{ __html: data }} />
+{/*Tabla resumen de lista de productos*/}
 
-                        {/*Tabla resumen de lista de productos*/}
-                        <table className="resume-items" dangerouslySetInnerHTML={{ __html: resumen }} />
-                    </div>}
+    <table className="resume-items">
+        <tr>
+        <th colspan="2" className="total-title">Total</th>
+        </tr>
+{/*item 1*/}
 
-                <div className="boton-container">
-                    <Link to="/Checkout"><button className="button-carrito">Checkout</button></Link>
-                </div>
-
-            </div>
+    {data.map((element)=>{
+        return <>
+            <tr>
+            <td className="product-resume">{element.productos.nombre} ({element.cantidad}pza)</td>
+            <td className="price-resume">${element.subtotal}.00 mxn</td>
+            </tr>
         </>
+      })}
+
+{/*Total tabla resumen de lista de productos*/}
+       <tr>
+        <td colspan="1" className="total-description">Suma total</td>
+        <td colspan="1" className="total-price">$ {resumen}.00 mxn</td>
+        </tr>
+        
+        <tr>
+        <td className="checkout" colspan="2" >
+        <Link to="/Checkout"><button className="button-carrito">Checkout</button></Link>
+        </td>  
+        </tr>   
+    </table>
+                        
+    </div>}
+    
+        </div>
+    
+    </>
     )
+
+    
+      
 }
 
 
