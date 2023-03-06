@@ -33,8 +33,15 @@ a:hover {
 .parra {
   color: #000000;
   src: url(apple.ttf);
+  background: transparent ;
+  border: transparent;
   margin-left: 5px;
   font-size: 15px;
+}
+.parra:active{
+
+ color: #606060;
+
 }
 .link:hover {
   color: #1b1b1c;
@@ -93,7 +100,7 @@ span{
   background-color: #000000;
   font-family: 'unicons';
   content: '\eb4f';
-  z-index: 20;
+  z-index: 2;
   top: -10px;
   left: -10px;
   line-height: 36px;
@@ -128,8 +135,8 @@ span{
 
 .card-front, .card-back {
 align-items: center;
-width: 400px;
-height: 500px;
+width: 450px;
+height: 470px;
 background-color: #969696;
 background-position: bottom center;
 background-repeat: no-repeat;
@@ -308,7 +315,10 @@ font-family:themillions;
   transition: all 200ms linear;
 }
 .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #3bd5f0;
+  color: #0a0059;
+  position: static;
+  left: 15px;
+	font-size: 30px;
 	opacity: 1;
 }
 
@@ -318,7 +328,10 @@ font-family:themillions;
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
 	color: #bb2929;
-  font-size: medium;
+  position: relative;
+  left: 15px;
+  font-size: 30px;
+  
 	opacity: 1;
 }
 
@@ -399,5 +412,14 @@ font-family:themillions;
 .parafo{
   margin-left: 40px;
 }
+.send-email{
+  font-family:themillion;
+}
+.poptart{
+  font-family: themillion;
+  font-size: 50px;
+  color: #000000;
+}
+
   /*----validacion----*/
   
