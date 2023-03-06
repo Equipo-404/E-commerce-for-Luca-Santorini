@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import "./ObjetosPlayeras.css";
 import { Container,CardSubtitle} from 'reactstrap';
 
-const addToCart = (item) => {
-    console.log(JSON.stringify(item));
-};
 function Novedades() {
-   
+  const [cart, setCart] = useState([]);
+  const addToCart = (item) => {
+    setCart(prevCart => {
+      const newCart = [...prevCart, item];
+      console.log(newCart);
+      return newCart;
+    });
+  };
     const [items, setItems] = useState([
         {
             id: 4,
@@ -40,7 +44,7 @@ function Novedades() {
         }
     ]);
 
-    // Eliminamos los demás elementos del array items
+    
     
     const handleOptionChange = (index, value) => {
         const newItems = [...items];
