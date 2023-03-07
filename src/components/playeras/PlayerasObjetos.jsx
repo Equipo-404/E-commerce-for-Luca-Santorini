@@ -59,7 +59,7 @@ function Items() {
     </div>
   
     <div className="segundotextoleo">
-    <p></p>
+    <p>Playeras</p>
   </div>
 
   <div id="items-containerleo" className="items-grid">
