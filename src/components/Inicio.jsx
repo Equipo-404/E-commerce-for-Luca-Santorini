@@ -15,7 +15,9 @@ function Inicio() {
         <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553304/HARRY_EN_GUANATOS_BLANCA_FRONTAL_hvt0jz.png" id="Imagen3NovedadesInicio" />
       </div>
       <div>
-      <Link to="/Novedades"><button id="VerMasPaginaInicio">Ver más novedades</button> </Link>
+      <Link to="/Novedades"><button id="VerMasPaginaInicio" onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}>Ver más novedades</button> </Link>
       </div>
       <img src={imagenInicioLucaSanto} id="ImagenInicioLucaSanto" />
       <h2 id="h2LucaSantoriniSeccion2">Luca Santorini</h2>

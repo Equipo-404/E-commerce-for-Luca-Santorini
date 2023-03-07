@@ -1,18 +1,23 @@
 .booty{
   width: 100%;  
-  line-height: .5;
+  line-height: 1;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
-}
-.section{
-  width: 100%;
-  display: table;
-  float: left;
+  
 
+}
+.section-phan{
+  width: 100%;
+  display: grid;
+  float: left;
+  flex-wrap: wrap;
+  position:relative;
+  z-index: 1;
+  
 }
 .full-height{
   min-height: 100vh;
@@ -28,8 +33,15 @@ a:hover {
 .parra {
   color: #000000;
   src: url(apple.ttf);
+  background: transparent ;
+  border: transparent;
   margin-left: 5px;
   font-size: 15px;
+}
+.parra:active{
+
+ color: #606060;
+
 }
 .link:hover {
   color: #1b1b1c;
@@ -50,7 +62,7 @@ a:hover {
   font-family: themillion;
   color:#000000
 }
-h6 span{
+span{
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -88,7 +100,7 @@ h6 span{
   background-color: #000000;
   font-family: 'unicons';
   content: '\eb4f';
-  z-index: 20;
+  z-index: 2;
   top: -10px;
   left: -10px;
   line-height: 36px;
@@ -123,8 +135,8 @@ h6 span{
 
 .card-front, .card-back {
 align-items: center;
-width: 400px;
-height: 500px;
+width: 450px;
+height: 470px;
 background-color: #969696;
 background-position: bottom center;
 background-repeat: no-repeat;
@@ -157,10 +169,9 @@ backface-visibility: hidden;
   display: block;
 }
 
-.forms-control {
+.formulario__input {
 margin-left: 15px;
 padding: 20px;
-padding-left: px;
 height: 25px;
 width: 80%;
 font-weight: 500;
@@ -177,57 +188,155 @@ transition: all 200ms linear;
 box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
 font-family:themillions;
 }
-.forms-control:focus,
-.forms-control:active {
-  border: none;
+.formulario__input:focus,
+.formulario__input:active {
+  border: 4px solid #246d97;
   outline: none;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  margin-left: 17px;
+  padding: 22px;
+  height: 26px;
+  width: 90%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 23px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #000000;
+  background-color: #f6f1f1;
+ 
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  font-family:themillions;  
+  
 }
 
 
-.forms-group:-ms-input-placeholder  {
+.formulario__input-validacion {
+  border: 4px solid rgb(169, 5, 5);
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  margin-left: 17px;
+  padding: 20px;
+  height: 26px;
+  width: 90%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 23px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #000000;
+  background-color: #f6f1f1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  font-family:themillions;  
+  
+}
+
+.formulario__input-error {
+  font-size: 14px;
+  margin-bottom: 0;
+  color:rgb(169, 5, 5);
+  display: none;
+}
+.formulario__input-error-activo {
+  display: block;
+}
+
+.formulario__mensaje{
+  background: rgb(181, 4, 4);
+  padding: 0 10px;
+  border-radius: 3px;
+  display: none;
+}
+.formulario__mensaje-activo {
+  display:block;
+}
+.formulario__mensaje p {
+  margin: 0;
+}
+.formulario__mensaje-exito {
+  font-size: 25px;
+  color:#0d6602;
+  font-family:themillion;
+  display:none;
+}
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+
+.formulario__grupo:-ms-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group::-moz-placeholder  {
+.formulario__grupo::-moz-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:-moz-placeholder  {
+.formulario__grupo:-moz-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group::-webkit-input-placeholder  {
+.formulario__grupo::-webkit-placeholder  {
   color: #000000;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus:-ms-input-placeholder  {
+.formulario__grupo:focus:-ms-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus::-moz-placeholder  {
+.formulario__grupo:focus::-moz-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus:-moz-placeholder  {
+.formulario__grupo:focus:-moz-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.forms-group:focus::-webkit-input-placeholder  {
+.formulario__grupo:focus::-webkit-input-placeholder  {
   opacity: 0;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+}
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #0a0059;
+  position: static;
+  left: 15px;
+	font-size: 30px;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+  position: relative;
+  left: 15px;
+  font-size: 30px;
+  
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
 }
 
 .loga{  
@@ -303,4 +412,14 @@ font-family:themillions;
 .parafo{
   margin-left: 40px;
 }
+.send-email{
+  font-family:themillion;
+}
+.poptart{
+  font-family: themillion;
+  font-size: 50px;
+  color: #000000;
+}
+
+  /*----validacion----*/
   
