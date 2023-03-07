@@ -8,6 +8,11 @@ font-family: applegaramoundbase;
 src: url("../../assets/fonts/AppleGaramond-Bold.ttf");
 }
 
+.img-table-products {
+    width: 20px;
+    height: 20px;
+}
+
 .parent-admin{ 
     display: grid;
     height: 100vh;
