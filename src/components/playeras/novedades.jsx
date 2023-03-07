@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import "./ObjetosPlayeras.css";
-import { Container, Card, CardImg, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
+import { Container, CardImg,  CardSubtitle, } from 'reactstrap';
 
 function Novedades() {
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState([]);
-  const [selectedSizes, setSelectedSizes] = useState([]);
   const [selectedQuantities, setSelectedQuantities] = useState([]);
 
   useEffect(() => {
@@ -15,50 +14,37 @@ function Novedades() {
         console.log(data);
         const itemObjects = data.map(item => ({
           ...item,
-          selectedSize: item.talla[0] // inicializa la talla seleccionada en la primera opción
+        // inicializa la talla seleccionada en la primera opción
         }));
         setItems(itemObjects);
-        setSelectedSizes(new Array(itemObjects.length).fill(itemObjects[0].talla[0]));
         setSelectedQuantities(new Array(itemObjects.length).fill(1));
       })
       .catch(error => console.log(error));
   }, []);
 
-  const addToCart = (item, selectedSize, selectedQuantity) => {
+  
+  const addToCart = (item, selectedQuantity) => {
     setCart(prevCart => {
-      const newCart = [...prevCart, { item, selectedSize, selectedQuantity }];
+      const newCart = [...prevCart, { item, selectedQuantity }];
+      console.log(`Agregado ${selectedQuantity} ${item.nombre} a la bolsa`);
       console.log(newCart);
       return newCart;
     });
   };
 
-  const handleSizeChange = (index, value) => {
-    setItems(prevItems => {
-      const updatedItems = [...prevItems];
-      updatedItems[index] = {
-        ...updatedItems[index],
-        selectedSize: value
-      };
-      return updatedItems;
-    });
-    setSelectedSizes(prevSelectedSizes => {
-      const updatedSelectedSizes = [...prevSelectedSizes];
-      updatedSelectedSizes[index] = value;
-      return updatedSelectedSizes;
-    });
-  };
   const handleQuantityChange = (index, value) => {
     const newItems = [...items];
-    const maxQuantity = newItems[index].cantidad;
+    const maxQuantity = newItems[index].maxQuantity;
     if (value > maxQuantity) { 
-      newItems[index].selectedQuantity = maxQuantity; // establece la cantidad seleccionada en la cantidad máxima permitida
+      newItems[index].quantity = maxQuantity; 
     } else if (value < 0) { 
-      newItems[index].selectedQuantity = 0; // establece la cantidad seleccionada en cero si el valor ingresado es negativo
+      newItems[index].quantity = 0; 
     } else {
-      newItems[index].selectedQuantity = value; // actualiza la cantidad seleccionada
+      newItems[index].quantity = value;
     }
     setItems(newItems);
   };
+
 
   return (
     <>
@@ -75,32 +61,28 @@ function Novedades() {
   </div>
 
   <div id="items-containerleo" className="items-grid">
-    {items.map((item, index) => {
+  {items.filter(item => item.idProducto === 5 || item.idProducto === 7 || item.idProducto === 9).map((item, index) => {
       
         return (
           <div key={item.idProducto} className="item">
             <Container>
-              <CardImg className="imagenesplayerasleo" src={item.foto} alt={item.nombre} />
+              <CardImg className="imagenesplayerasleo" src={item.fotop} alt={item.nombre} />
               <CardSubtitle className="precioleo">
-                <p>{item.name}</p>
-                <p className="descripcionleo">{item.description}</p>
-                <select className="opcioneslibretas" value={item.selectedSize} onChange={(e) => handleSizeChange(index, e.target.value)}>
-                  {item.talla.map((talla, index) => (
-                    <option key={index} value={talla}>{talla}</option>
-                  ))}
-                </select>
+                <p>${item.precio}MXN</p>
+                <p className="descripcionleo">{item.descripcion.slice(0, 68)}{item.descripcion.length > 46 && "..."}</p>
+                
                 <input 
-                type="number" 
-                placeholder='Cantidad' 
-                className="inputcantidadplayerasleo" 
-                min="0" 
-                max={item.cantidad} 
-                value={item.selectedQuantity || ""} 
-                onChange={(e) => {
-                const value = parseInt(e.target.value);
-                const maxQuantity = item.cantidad;
-                if (value > maxQuantity) { 
-                setItems(prevItems => {
+  type="number" 
+  placeholder='Cantidad' 
+  className="inputcantidadplayerasleo" 
+  min="0" 
+  max={item.cantidad} 
+  value={item.selectedQuantity || ""} 
+  onChange={(e) => {
+    const value = parseInt(e.target.value);
+    const maxQuantity = item.cantidad;
+    if (value > maxQuantity) { 
+      setItems(prevItems => {
         const updatedItems = [...prevItems];
         updatedItems[index] = {
           ...updatedItems[index],
@@ -108,6 +90,17 @@ function Novedades() {
         };
         return updatedItems;
       });
+      e.target.value = maxQuantity; // set the input value to the maximum allowed quantity
+    } else if (value > 10) { // restrict the maximum quantity to 10
+      setItems(prevItems => {
+        const updatedItems = [...prevItems];
+        updatedItems[index] = {
+          ...updatedItems[index],
+          selectedQuantity: 10
+        };
+        return updatedItems;
+      });
+      e.target.value = 10; // set the input value to 10
     } else {
       setItems(prevItems => {
         const updatedItems = [...prevItems];
@@ -121,7 +114,7 @@ function Novedades() {
   }} 
 />
               </CardSubtitle>
-       <button className="botonleo" onClick={() => addToCart(item, item.selectedSize, item.selectedQuantity)}>agregar a la bolsa</button>
+              <button className="botonleo" onClick={() => addToCart(item, item.selectedQuantity)}>agregar a la bolsa</button>
             </Container>
           </div>
         );
@@ -133,6 +126,5 @@ function Novedades() {
 }
 
 export default Novedades;
-
 
 
