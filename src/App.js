@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Inicio from './components/Inicio';
 import About404 from './components/acerca404/About404';
 import AboutLuc from './components/AcercaLuc/AboutLuc';
+import GraciasCompra from './components/GraciasCompra/GraciasCompra';
 
 import LogIn from './components/login/LogIn';
 import Items from './components/playeras/PlayerasObjetos';
@@ -59,7 +60,8 @@ function App() {
         <Route exact path="/Checkout" component={Checkout} />
         <Route exact path="/Contacto" component={Contacto} />
         <Route exact path="/AdminProductos" component={AdminProductos} />
-        <Route path="/" component={Error404}/> 
+        <Route exact path="/GraciasCompra" component={GraciasCompra} />
+        <Route path="/" component={Error404}/>
       </Switch>
       <Footer/>
     </Router>

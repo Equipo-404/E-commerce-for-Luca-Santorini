@@ -1,4 +1,5 @@
 import './Checkout.css';
+import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 
 export default class Checkout extends Component {
@@ -13,24 +14,24 @@ export default class Checkout extends Component {
                                 <td colSpan={2}><h1>Datos de envío</h1></td>
                             </thead>
                             <tr>
-                                <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)"/> </td>
-                                <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos"/> </td>
+                                <td> <input type="text" id="name" name="user_name" placeholder="Nombre(s)" required/> </td>
+                                <td> <input type="text" id="last_name" name="user_last_name" placeholder="Apellidos" required/> </td>
                             </tr>
                             <tr>
-                                <td colspan="2"> <input colspan="2" type="text" id="address" name="user_address" placeholder="Domicilio"/> </td>
+                                <td colspan="2"> <input colspan="2" type="text" id="address" name="user_address" placeholder="Domicilio" required/> </td>
                             </tr>
                             <tr>
-                                <td> <input type="number" id="zip" name="user_zip" placeholder="Código postal"/> </td>
-                                <td> <input type="text" id="location" name="user_location" placeholder="Municipio" /> </td>
+                                <td> <input type="number" id="zip" name="user_zip" placeholder="Código postal" required/> </td>
+                                <td> <input type="text" id="location" name="user_location" placeholder="Municipio" required/> </td>
                             </tr>
                             <tr>
-                                <td colspan="2"> <input type="text" id="state" name="user_state" placeholder="Estado"/> </td>
+                                <td colspan="2"> <input type="text" id="state" name="user_state" placeholder="Estado" required/> </td>
                             </tr>
                             <tr>
-                                <td colspan="2"> <input type="text" id="reference" name="user_reference" placeholder="Referencia (Opcional)"/> </td>
+                                <td colspan="2"> <input type="text" id="reference" name="user_reference" placeholder="Referencia (Opcional)" required/> </td>
                             </tr>
                             <tr>
-                                <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico"/> </td>
+                                <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico" required/> </td>
                             </tr>
                         </table>
                     </div>
@@ -63,7 +64,7 @@ export default class Checkout extends Component {
 
                             <tr>
                                 <td className="checkout" colspan="2" >
-                                    <button className="continue-button">Terminar pedido</button>
+                                <Link to="/GraciasCompra"><button className="continue-button">Terminar pedido</button></Link>
                                 </td>
                             </tr>
                         </table>
