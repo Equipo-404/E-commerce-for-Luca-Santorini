@@ -10,7 +10,7 @@ function Items() {
   const [selectedQuantities, setSelectedQuantities] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/productos')
+    fetch('https://mocki.io/v1/d9cd53e1-8108-4ce3-943a-6cfecc69dea4')
       .then(response => response.json())
       .then(data => {
         console.log(data);
