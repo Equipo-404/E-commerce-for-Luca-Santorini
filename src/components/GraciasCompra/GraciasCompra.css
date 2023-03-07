@@ -13,8 +13,23 @@ h1{
     height: auto;
     margin-top: 50px;
     margin-bottom: 1px;
+    
    
 }
+.LUCASANTOCENT{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #lucasanto {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 
     .h2yimg {
         background-image: url(https://res.cloudinary.com/dbyl6ppep/image/upload/v1677978025/fotos/LSSW_Promocionales_Mesa_de_trabajo_1_r1kfyn.png);
@@ -83,6 +98,24 @@ h1{
         background-image: linear-gradient(200deg, #040807, #F22E2E);
         -webkit-text-fill-color: transparent;
       }
+     .contene-boton{
+      text-align: center;
+      
+      
+     }
+     .Back{
+      
+      background-image: linear-gradient(to right, #000000, #F22E2E);
+      color: #FFFFFF;
+      font-family:Apple Garamond Bold ;
+      font-size: 1rem; 
+      padding: 10px 22px; 
+      border-radius: 15px; 
+      
+    }
+    
+    
+     
       
  
 
