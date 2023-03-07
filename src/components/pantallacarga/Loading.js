@@ -3,6 +3,7 @@ import PantallaCarga from './PantallaCarga';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import 'animate.css';
 
+{/* Funcionaidad pantalla carga*/}
 function Loading(){
     return (
         

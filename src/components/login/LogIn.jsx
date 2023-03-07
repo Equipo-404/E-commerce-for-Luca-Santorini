@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './style.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { registerUser , validateLogin } from '../../login.js';
-
+import { registerUser , validateLogin , conti , publicidad  } from '../../login.js';
 
 export default class LogIn extends Component {
     
@@ -42,7 +41,7 @@ export default class LogIn extends Component {
                                                 </div>
                                                 <br></br>
                                                 <div>
-                                                    <a className="parra" href="">¿Olvidaste tu contraseña?</a>
+                                                    <button onClick={conti} className="parra" id="parra" href="">¿Olvidaste tu contraseña?</button>
                                                 </div>
                                             </div>
                                         </div>

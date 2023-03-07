@@ -49,10 +49,10 @@ body {
     padding: 30px 10px 10px 10px;
 }
 
-.product-name:hover{
+/*}.product-name:hover{
     text-decoration-line: underline;
     cursor: pointer;
-}
+}*/
 
 .text-description {
     font-family: 'Apple Garamond', sans-serif;
@@ -113,11 +113,11 @@ body {
    
 }
 
-.product-resume:hover{
+/*}.product-resume:hover{
     text-decoration-line: underline;
     cursor: pointer;
 
-}
+}*/
 
 .price-resume {
     font-family: 'Apple Garamond', sans-serif;
@@ -166,7 +166,7 @@ body {
     border: 1px solid #040807 ;
     width: 220px;
     height: 50px;
-    padding: 2px 10px 10px 10px;
+    padding: 25px 10px 25px 10px;
     align-items: center;
     box-shadow: 2px 3px 4px 2px #ababab;
     border-radius: 10px;
@@ -242,3 +242,29 @@ body {
     }
    
 }
+
+@media(min-width: 370px) {
+    .button-carrito{
+        font-size: 25px;
+        width: 200px;
+        height: 45px;
+    }
+}
+
+@media(min-width: 780px) {
+    .button-carrito{
+        font-size: 27px;
+        width: 210px;
+        height: 50px;
+    }
+}
+
+@media(min-width: 1090px) {
+    .button-carrito{
+        font-size: 29px;
+        width: 220px;
+        height: 45px;
+    }
+}
+
+
