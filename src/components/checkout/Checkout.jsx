@@ -9,6 +9,7 @@ export default class Checkout extends Component {
             <div className="parent-checkout">
                 <div className="container-form">
                     <div className="data-form">
+                    <form id='formulario' action="https://formsubmit.co/paveloswaldo.gallegos@gmail.com" method="POST">
                         <table classNameName="checkout-table">
                             <thead>
                                 <td colSpan={2}><h1>Datos de envío</h1></td>
@@ -33,7 +34,13 @@ export default class Checkout extends Component {
                             <tr>
                                 <td colspan="2"> <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico" required/> </td>
                             </tr>
+                            <tr>
+                                <td className="checkout" colspan="2" >
+                                <Link to="/GraciasCompra"><button className="continue-button">Terminar pedido</button></Link>
+                                </td>
+                            </tr>
                         </table>
+                    </form>
                     </div>
                     <div className="summary-form">
                         <table className="resume-products">
@@ -42,31 +49,21 @@ export default class Checkout extends Component {
                             </tr>
                             {/*item 1*/}
                             <tr>
-                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                                <td className="price-resume">$ 100.00 mxn</td>
+                                <td className="product-resume">LSSW x DANNY OCÉANO Babylon G (1pza)</td>
+                                <td className="price-resume">$ 300.00 mxn</td>
                             </tr>
                             {/*item 2*/}
                             <tr>
-                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                                <td className="price-resume">$ 100.00 mxn</td>
-                            </tr>
-                            {/*item 3*/}
-                            <tr>
-                                <td className="product-resume">MÓNACO LSSW X Danny Ocean</td>
-                                <td className="price-resume">$ 100.00 mxn</td>
+                                <td className="product-resume">HARRY EN GUANATOS (1pza)</td>
+                                <td className="price-resume">$ 300.00 mxn</td>
                             </tr>
 
                             {/*Total tabla resumen de lista de productos*/}
                             <tr>
                                 <td colspan="1" className="total-description">Suma total</td>
-                                <td colspan="1" className="total-price">$ 300.00 mxn</td>
+                                <td colspan="1" className="total-price">$ 600.00 mxn</td>
                             </tr>
 
-                            <tr>
-                                <td className="checkout" colspan="2" >
-                                <Link to="/GraciasCompra"><button className="continue-button">Terminar pedido</button></Link>
-                                </td>
-                            </tr>
                         </table>
                         <hr></hr>
                     </div>

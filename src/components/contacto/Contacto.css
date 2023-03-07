@@ -30,7 +30,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    width: 50rem;
+    width: 5 0rem;
     height: 40rem;
     border: 1px solid #000;
     box-shadow: 3px 4px 5px 3px #ababab;
@@ -97,7 +97,7 @@ h1{
     box-shadow: 2px 3px 4px 2px #808080;
 }
 
-.image-form {
+.img-form {
     float:left;
     display: flex;
     place-items: center;
@@ -105,7 +105,7 @@ h1{
     width: 50%;
 }
 
-.image-form img {
+.img-form img {
     background-size: cover;
     height: 100%; 
     width: 100%;
@@ -129,7 +129,7 @@ input, textarea {
     .info-form{
         width: 66%;
     }
-    .image-form{
+    .img-form{
         width: 0%;
     }
 }
@@ -148,7 +148,7 @@ input, textarea {
     .info-form{
         width: 0%;
     }
-    .image-form{
+    .img-form{
         width: 0%;
     }
 }
