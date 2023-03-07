@@ -1,5 +1,7 @@
 import React from 'react';
 import './GraciasCompra.css';
+import { Link } from 'react-router-dom';
+
 
 
 function GraciasCompra() {
@@ -12,8 +14,9 @@ function GraciasCompra() {
        
         <h1 className="thx">¡GRACIAS POR TU COMPRA!</h1>
         <div className='contene-boton'>
-        
-        <button className="Back">Inicio</button>  
+        <Link to="/">
+        <button className="Back">Inicio</button> 
+        </Link>
        </div>
         <p className="breve">En breve te contactaremos <br /> via correo electronico <br /> con los detalles <br /> de tu pedido.</p>
       </div>
