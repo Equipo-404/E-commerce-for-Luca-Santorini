@@ -91,7 +91,7 @@ const About404 = () => {
   return (
     <Container className="margin-top" fluid="fluid">
 
-      <Row lg="2" sm="1">
+      <Row className="media" lg="2">
 
         <Col className="red-circle-media">
           <div className="red-circle">
