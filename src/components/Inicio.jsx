@@ -10,9 +10,9 @@ function Inicio() {
       <img src={imagenInicio} id="ImagenPaginaInicio" />
         <h2 id="h2Novedades">Novedades</h2>
       <div className="ImagenesSegundaSeccionInicio">
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676693597/LIBRETA_I_AM_AN_ARTIST_NOT_A_DOCTOR_BLANCA_yrljlh.png" id="Imagen1NovedadesInicio" />
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158114/LIBRETA_NOT_A_DOCTOR_BLANCA_jsbn0a.png" id="Imagen2NovedadesInicio" />
-        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158169/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_cfbnyh.png" id="Imagen3NovedadesInicio" />
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1677640966/LSSW_x_DANY_OC%C3%89ANO_BABYLON_G_AZUL_REY_FRONTAL_foxdgx.png" id="Imagen1NovedadesInicio" />
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553300/LAS_DEL_BELLAKEO_AZUL_FRONTAL_so3nr3.png" id="Imagen2NovedadesInicio" />
+        <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1677553304/HARRY_EN_GUANATOS_BLANCA_FRONTAL_hvt0jz.png" id="Imagen3NovedadesInicio" />
       </div>
       <div>
       <Link to="/Novedades"><button id="VerMasPaginaInicio" onClick={() => {
@@ -25,12 +25,10 @@ function Inicio() {
       <img src="https://res.cloudinary.com/dzrqrtezc/image/upload/v1676158169/LSSW_x_DANNY_OCEAN_BABYLON_G_NEGRA_FRONTAL_cfbnyh.png" id="ImagenTerceraSeccionInicio" />
       <div id="DescripcionPlayera">
       <h3 id="DescripcionPlayeraInicio">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus atque nam architecto, modi quasi odit quisquam earum aliquid cum voluptate rerum saepe exercitationem. Fugit beatae alias quam itaque veritatis!
-        In voluptatem quo vitae laborum dolor modi voluptatum eum, ad deleniti ullam similique sequi magnam nisi sint tempore velit voluptas officia beatae quaerat incidunt, quas itaque. Officia reprehenderit quae aspernatur!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut tempore dolorem quam ducimus fugiat alias nulla iste nihil assumenda! Veritatis quibusdam earum porro, voluptatem qui blanditiis non repellendus explicabo!</h3>
-        <Link to="/Items" onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" })
-            }}><button id="VerMasPaginaInicioPlayera">Ver más playeras</button> </Link>
+      Luca Santorini es un e-commerce que se enfoca en ofrecer playeras únicas e independientes con diseños originales y de artistas independientes. Su catálogo de playeras incluye una variedad de estilos y temáticas que reflejan el espíritu creativo de la marca. Desde diseños con ilustraciones enérgicas y colores vibrantes, hasta estampados más sutiles y minimalistas, las playeras de Luca Santorini tienen algo para todos los gustos y estilos.
+
+Lo que hace que las playeras de Luca Santorini sean especiales es su enfoque en el arte independiente y la colaboración con artistas emergentes. Cada diseño es una obra de arte en sí mismo, y las playeras son una forma accesible de llevar la creatividad a la vida cotidiana. Además, al apoyar a artistas independientes, Luca Santorini contribuye a fomentar una cultura de consumo responsable y sostenible. En resumen, las playeras de Luca Santorini no solo son un complemento perfecto para cualquier guardarropa, sino también una forma de apoyar y celebrar la creatividad y el arte independiente.</h3>
+        <Link to="/Items" ><button id="VerMasPaginaInicioPlayera">Ver más playeras</button> </Link>
       </div>
       </div>
       </div>
