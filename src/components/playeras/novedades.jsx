@@ -9,7 +9,7 @@ function Novedades() {
   const [selectedQuantities, setSelectedQuantities] = useState([]);
 
   useEffect(() => {
-    fetch('https://mocki.io/v1/e91da5a1-2d62-4a0e-a149-ce37bcf3fb73')
+    fetch('http://localhost:8080/productos')
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -78,7 +78,7 @@ function Novedades() {
     {items.map((item, index) => {
       
         return (
-          <div key={item.foto} className="item">
+          <div key={item.idProducto} className="item">
             <Container>
               <CardImg className="imagenesplayerasleo" src={item.foto} alt={item.nombre} />
               <CardSubtitle className="precioleo">
@@ -90,17 +90,17 @@ function Novedades() {
                   ))}
                 </select>
                 <input 
-  type="number" 
-  placeholder='Cantidad' 
-  className="inputcantidadplayerasleo" 
-  min="0" 
-  max={item.cantidad} 
-  value={item.selectedQuantity || ""} 
-  onChange={(e) => {
-    const value = parseInt(e.target.value);
-    const maxQuantity = item.cantidad;
-    if (value > maxQuantity) { 
-      setItems(prevItems => {
+                type="number" 
+                placeholder='Cantidad' 
+                className="inputcantidadplayerasleo" 
+                min="0" 
+                max={item.cantidad} 
+                value={item.selectedQuantity || ""} 
+                onChange={(e) => {
+                const value = parseInt(e.target.value);
+                const maxQuantity = item.cantidad;
+                if (value > maxQuantity) { 
+                setItems(prevItems => {
         const updatedItems = [...prevItems];
         updatedItems[index] = {
           ...updatedItems[index],
