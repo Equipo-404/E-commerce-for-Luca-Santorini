@@ -7,7 +7,7 @@ export default class Contacto extends Component {
       <>
         <div className="parent-contact">
           <div className="container-contact">
-            <div className="image-form">
+            <div className="img-form">
                 <img src="https://res.cloudinary.com/ds3wzgtfa/image/upload/v1676444869/ChildhoodManifest-Contact-BG_tn2xpl.jpg" alt="" />
             </div>
             <div className="info-form">
